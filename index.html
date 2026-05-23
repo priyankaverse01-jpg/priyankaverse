@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priyanka Lowanshi — Project Coordinator & PM</title>
+  <meta name="description" content="Project Coordinator with 4+ years managing 20+ international projects across UAE, UK, China & Singapore." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Archivo:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── TOKENS ─────────────────────────────────────────────────── */
+    :root {
+      --ink:       #0e0e0e;
+      --ink-mid:   #2a2a2a;
+      --ink-soft:  #5a5a5a;
+      --ink-muted: #9a9a9a;
+      --paper:     #fafaf8;
+      --paper-2:   #f2f2ee;
+      --paper-3:   #e8e8e2;
+      --accent:    #c8001e;
+      --accent-2:  #1a1a2e;
+      --gold:      #b8960c;
+
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body:    'Archivo', sans-serif;
+
+      --max-w: 1140px;
+      --col-gap: 48px;
+    }
+
+    /* ─── RESET ──────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-body);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    /* ─── UTILITIES ──────────────────────────────────────────────── */
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 32px; }
+    .rule { width: 100%; height: 1px; background: var(--ink); margin: 0; }
+    .rule-thin { width: 100%; height: 1px; background: var(--paper-3); }
+    .rule-accent { width: 100%; height: 3px; background: var(--accent); }
+    .kicker {
+      font-family: var(--font-body);
+      font-size: 0.68rem; font-weight: 600;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--accent);
+    }
+    .section-no {
+      font-family: var(--font-body);
+      font-size: 0.65rem; font-weight: 600;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--ink-muted);
+    }
+
+    /* ─── NAV ────────────────────────────────────────────────────── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: var(--paper);
+      border-bottom: 1px solid var(--ink);
+      transition: box-shadow 0.3s;
+    }
+    nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+    .nav-top {
+      max-width: var(--max-w); margin: 0 auto; padding: 0 32px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 56px;
+    }
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.15rem; font-weight: 900;
+      letter-spacing: -0.01em; color: var(--ink);
+    }
+    .nav-logo em { font-style: italic; color: var(--accent); }
+    .nav-links { display: flex; gap: 28px; align-items: center; }
+    .nav-links a {
+      font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--ink-soft); transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--ink); }
+    .nav-cta {
+      padding: 7px 20px;
+      background: var(--ink) !important;
+      color: var(--paper) !important;
+      font-size: 0.7rem !important;
+      border-radius: 0 !important;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--accent) !important; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--ink); transition: 0.3s; }
+    .mobile-nav { display: none; flex-direction: column; background: var(--paper); border-top: 1px solid var(--paper-3); padding: 16px 32px 24px; }
+    .mobile-nav a { padding: 12px 0; font-size: 0.85rem; font-weight: 600; color: var(--ink); border-bottom: 1px solid var(--paper-3); letter-spacing: 0.06em; text-transform: uppercase; }
+    .mobile-nav a:last-child { border-bottom: none; }
+    .mobile-nav.open { display: flex; }
+
+    /* ─── HERO ───────────────────────────────────────────────────── */
+    #hero {
+      padding-top: 56px;
+      background: var(--paper);
+    }
+
+    /* Hero masthead stripe */
+    .hero-masthead {
+      background: var(--ink);
+      padding: 10px 32px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .hero-masthead-left {
+      font-family: var(--font-body);
+      font-size: 0.65rem; font-weight: 600;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+    }
+    .hero-masthead-date {
+      font-family: var(--font-body);
+      font-size: 0.65rem; font-weight: 400;
+      letter-spacing: 0.12em;
+      color: rgba(255,255,255,0.45);
+    }
+
+    /* Big editorial hero grid */
+    .hero-grid {
+      max-width: var(--max-w); margin: 0 auto; padding: 0 32px;
+      display: grid;
+      grid-template-columns: 1fr 3px 1fr 3px 1fr;
+      grid-template-rows: auto auto;
+      gap: 0;
+      padding-top: 40px;
+    }
+    .hero-col-divider {
+      background: var(--ink);
+      margin: 0 28px;
+    }
+
+    /* Column 1: Issue label + giant name */
+    .hero-col-1 {
+      display: flex; flex-direction: column; justify-content: space-between;
+      padding-bottom: 36px;
+    }
+    .hero-issue-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      margin-bottom: 32px;
+    }
+    .hero-issue-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+    .hero-issue-text {
+      font-size: 0.65rem; font-weight: 600;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--ink-muted);
+    }
+    .hero-giant-name {
+      font-family: var(--font-display);
+      font-size: clamp(4rem, 8vw, 7rem);
+      font-weight: 900;
+      line-height: 0.9;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+    }
+    .hero-giant-name em {
+      font-style: italic;
+      font-weight: 400;
+      color: var(--accent);
+      display: block;
+    }
+
+    /* Column 2: Photo */
+    .hero-col-2 {
+      position: relative; padding-bottom: 36px;
+      display: flex; flex-direction: column;
+    }
+    .hero-photo-frame {
+      flex: 1;
+      background: var(--paper-3);
+      position: relative; overflow: hidden;
+      min-height: 380px;
+    }
+    .hero-photo-frame img {
+      width: 100%; height: 100%; object-fit: cover; object-position: top;
+    }
+    .hero-photo-placeholder {
+      width: 100%; height: 100%;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 12px; color: var(--ink-muted);
+      background: var(--paper-2);
+    }
+    .hero-photo-placeholder p { font-size: 0.75rem; text-align: center; }
+    .hero-photo-caption {
+      font-size: 0.65rem; font-weight: 400;
+      color: var(--ink-muted); letter-spacing: 0.06em;
+      margin-top: 8px;
+      font-style: italic;
+    }
+
+    /* Column 3: Role + desc + stats */
+    .hero-col-3 {
+      display: flex; flex-direction: column; justify-content: space-between;
+      padding-bottom: 36px;
+    }
+    .hero-role-block { margin-bottom: 24px; }
+    .hero-role {
+      font-family: var(--font-display);
+      font-size: clamp(1.1rem, 2vw, 1.4rem);
+      font-weight: 700; font-style: italic;
+      color: var(--ink); line-height: 1.3;
+      margin-bottom: 16px;
+    }
+    .hero-desc {
+      font-size: 0.9rem; color: var(--ink-soft);
+      line-height: 1.85; margin-bottom: 24px;
+    }
+    .hero-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 24px; }
+    .hero-chip {
+      display: inline-block; padding: 4px 10px;
+      border: 1px solid var(--paper-3);
+      font-size: 0.68rem; font-weight: 500;
+      color: var(--ink-soft); letter-spacing: 0.04em;
+    }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-primary {
+      padding: 11px 28px;
+      background: var(--ink); color: var(--paper);
+      font-size: 0.75rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: var(--accent); transform: translateY(-1px); }
+    .btn-secondary {
+      padding: 11px 28px;
+      border: 1.5px solid var(--ink);
+      color: var(--ink);
+      font-size: 0.75rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-secondary:hover { background: var(--ink); color: var(--paper); }
+
+    /* Hero stat strip below the grid */
+    .hero-stats-strip {
+      max-width: var(--max-w); margin: 0 auto;
+      border-top: 1px solid var(--ink);
+      display: grid; grid-template-columns: repeat(4, 1fr);
+    }
+    .hs-item {
+      padding: 20px 32px;
+      border-right: 1px solid var(--ink);
+      display: flex; align-items: baseline; gap: 12px;
+    }
+    .hs-item:last-child { border-right: none; }
+    .hs-num {
+      font-family: var(--font-display);
+      font-size: 2.2rem; font-weight: 900;
+      letter-spacing: -0.03em; color: var(--ink); line-height: 1;
+    }
+    .hs-label { font-size: 0.7rem; font-weight: 500; color: var(--ink-muted); line-height: 1.4; text-transform: uppercase; letter-spacing: 0.06em; }
+
+    /* ─── SECTION HEADER STYLE (editorial) ──────────────────────── */
+    .ed-section-head {
+      padding: 60px 0 40px;
+    }
+    .ed-section-head-inner {
+      display: flex; align-items: baseline;
+      justify-content: space-between; gap: 24px;
+      flex-wrap: wrap;
+      padding-bottom: 16px;
+      border-bottom: 3px solid var(--ink);
+    }
+    .ed-section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      font-weight: 900; letter-spacing: -0.03em;
+      color: var(--ink); line-height: 1;
+    }
+    .ed-section-sub {
+      font-size: 0.85rem; color: var(--ink-muted);
+      max-width: 320px; text-align: right; line-height: 1.6;
+    }
+
+    /* ─── ABOUT ──────────────────────────────────────────────────── */
+    #about { background: var(--paper); padding-bottom: 80px; }
+    .about-layout {
+      display: grid; grid-template-columns: 1fr 1px 1fr;
+      gap: 0; padding-top: 8px;
+    }
+    .about-col-div { background: var(--paper-3); margin: 0 48px; }
+    .about-left { padding-right: 0; }
+    .about-right { padding-left: 0; }
+    .about-drop-cap p:first-child::first-letter {
+      font-family: var(--font-display);
+      font-size: 5rem; font-weight: 900;
+      float: left; line-height: 0.75;
+      margin-right: 10px; margin-top: 8px;
+      color: var(--accent);
+    }
+    .about-body p {
+      font-size: 0.95rem; color: var(--ink-soft);
+      line-height: 1.9; margin-bottom: 20px;
+    }
+    .about-body p:last-child { margin-bottom: 0; }
+    .about-pullquote {
+      margin: 32px 0;
+      padding: 24px 0 24px 24px;
+      border-left: 4px solid var(--accent);
+    }
+    .about-pullquote p {
+      font-family: var(--font-display);
+      font-size: 1.25rem; font-weight: 700; font-style: italic;
+      color: var(--ink); line-height: 1.45 !important;
+      margin: 0 !important;
+    }
+    .about-highlights { display: flex; flex-direction: column; gap: 0; }
+    .about-highlight {
+      display: flex; gap: 20px; align-items: flex-start;
+      padding: 24px 0; border-bottom: 1px solid var(--paper-3);
+    }
+    .about-highlight:first-child { padding-top: 0; }
+    .about-highlight:last-child { border-bottom: none; }
+    .ah-num {
+      font-family: var(--font-display);
+      font-size: 2rem; font-weight: 900;
+      color: var(--paper-3); line-height: 1;
+      flex-shrink: 0; width: 48px; text-align: right;
+    }
+    .ah-body h3 {
+      font-family: var(--font-display);
+      font-size: 1rem; font-weight: 700;
+      color: var(--ink); margin-bottom: 6px;
+    }
+    .ah-body p { font-size: 0.84rem; color: var(--ink-soft); line-height: 1.7; }
+
+    /* ─── EXPERIENCE ─────────────────────────────────────────────── */
+    #experience { background: var(--paper-2); padding-bottom: 80px; }
+    #experience .container { padding-top: 0; }
+    .exp-layout {
+      display: grid; grid-template-columns: 200px 1fr;
+      gap: 0;
+    }
+    .exp-left {
+      border-right: 1px solid var(--paper-3);
+      padding-right: 36px; padding-top: 8px;
+      position: sticky; top: 80px; align-self: start;
+    }
+    .exp-left p { font-size: 0.82rem; color: var(--ink-muted); line-height: 1.7; margin-top: 12px; }
+    .exp-right { padding-left: 48px; padding-top: 8px; }
+    .exp-item { padding-bottom: 52px; border-bottom: 1px solid var(--paper-3); margin-bottom: 52px; }
+    .exp-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .exp-header {
+      display: grid; grid-template-columns: 1fr auto;
+      align-items: baseline; gap: 16px; margin-bottom: 4px;
+    }
+    .exp-company {
+      font-family: var(--font-display);
+      font-size: 1.6rem; font-weight: 900;
+      letter-spacing: -0.02em; color: var(--ink);
+    }
+    .exp-period {
+      font-size: 0.7rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--accent);
+      white-space: nowrap;
+    }
+    .exp-role {
+      font-size: 0.82rem; font-weight: 400; font-style: italic;
+      color: var(--ink-muted); margin-bottom: 20px;
+    }
+    .exp-bullets { display: flex; flex-direction: column; gap: 10px; }
+    .exp-bullet {
+      display: flex; gap: 16px;
+      font-size: 0.88rem; color: var(--ink-soft); line-height: 1.7;
+    }
+    .exp-bullet-mark {
+      flex-shrink: 0; width: 16px; text-align: right;
+      color: var(--accent); font-weight: 700; margin-top: 1px;
+      font-size: 0.9rem;
+    }
+    .exp-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 20px; }
+    .exp-tag {
+      padding: 3px 10px; border: 1px solid var(--paper-3);
+      font-size: 0.7rem; font-weight: 500; color: var(--ink-soft);
+      letter-spacing: 0.04em;
+    }
+
+    /* ─── CASE STUDIES ───────────────────────────────────────────── */
+    #case-studies { background: var(--paper); padding-bottom: 80px; }
+    #case-studies .container { padding-top: 0; }
+
+    /* Featured case: big horizontal card */
+    .case-featured {
+      display: grid; grid-template-columns: 1fr 1px 1fr;
+      gap: 0; border: 1px solid var(--ink);
+      margin-bottom: 20px; cursor: pointer;
+      transition: box-shadow 0.25s;
+    }
+    .case-featured:hover { box-shadow: 6px 6px 0 var(--ink); }
+    .cf-left {
+      padding: 36px 40px; display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .cf-divider { background: var(--ink); }
+    .cf-right { padding: 36px 40px; background: var(--paper-2); }
+    .case-num-large {
+      font-family: var(--font-display);
+      font-size: 5rem; font-weight: 900;
+      color: var(--paper-3); line-height: 1;
+      letter-spacing: -0.04em;
+      margin-bottom: 12px;
+    }
+    .case-kicker { margin-bottom: 10px; }
+    .case-title-ed {
+      font-family: var(--font-display);
+      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+      font-weight: 900; letter-spacing: -0.02em;
+      color: var(--ink); line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .case-desc-ed {
+      font-size: 0.88rem; color: var(--ink-soft); line-height: 1.75; margin-bottom: 20px;
+    }
+    .case-read-more {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--accent); transition: gap 0.2s;
+    }
+    .case-featured:hover .case-read-more { gap: 14px; }
+    .cf-results-label {
+      font-size: 0.65rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--ink-muted); margin-bottom: 16px;
+    }
+    .cf-result-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
+    .cf-result {
+      display: flex; align-items: flex-start; gap: 12px;
+      font-size: 0.86rem; color: var(--ink); line-height: 1.5;
+    }
+    .cf-result-line {
+      flex-shrink: 0; width: 20px; height: 1px;
+      background: var(--accent); margin-top: 10px;
+    }
+    .cf-meta { display: flex; flex-direction: column; gap: 8px; }
+    .cf-meta-row {
+      display: flex; justify-content: space-between;
+      font-size: 0.75rem; padding-bottom: 8px;
+      border-bottom: 1px solid var(--paper-3);
+    }
+    .cf-meta-row span:first-child { color: var(--ink-muted); }
+    .cf-meta-row span:last-child { color: var(--ink); font-weight: 600; }
+
+    /* Grid of remaining 3 cases */
+    .case-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--ink); border: 1px solid var(--ink); }
+    .case-small {
+      background: var(--paper);
+      padding: 28px; cursor: pointer;
+      transition: background 0.2s;
+    }
+    .case-small:hover { background: var(--paper-2); }
+    .cs-num {
+      font-family: var(--font-display);
+      font-size: 2.5rem; font-weight: 900;
+      color: var(--paper-3); line-height: 1; margin-bottom: 8px;
+    }
+    .cs-kicker { margin-bottom: 8px; }
+    .cs-title {
+      font-family: var(--font-display);
+      font-size: 1.05rem; font-weight: 700;
+      color: var(--ink); line-height: 1.3; margin-bottom: 10px;
+    }
+    .cs-desc { font-size: 0.8rem; color: var(--ink-soft); line-height: 1.65; margin-bottom: 14px; }
+    .cs-results { display: flex; flex-direction: column; gap: 6px; }
+    .cs-result { display: flex; align-items: center; gap: 8px; font-size: 0.76rem; color: var(--ink); font-weight: 500; }
+    .cs-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+    .cs-cta { display: inline-flex; align-items: center; gap: 6px; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-top: 14px; }
+
+    /* ─── MODAL ──────────────────────────────────────────────────── */
+    .modal-overlay {
+      display: none; position: fixed; inset: 0; z-index: 200;
+      background: rgba(14,14,14,0.7); backdrop-filter: blur(6px);
+      align-items: center; justify-content: center; padding: 24px;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal {
+      background: var(--paper);
+      border: 1px solid var(--ink);
+      max-width: 760px; width: 100%; max-height: 88vh; overflow-y: auto;
+      position: relative;
+      box-shadow: 8px 8px 0 var(--ink);
+      animation: modalIn 0.25s ease;
+    }
+    @keyframes modalIn { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:none} }
+    .modal-accent-bar { height: 4px; background: var(--accent); }
+    .modal-header { padding: 32px 40px 24px; border-bottom: 1px solid var(--paper-3); position: sticky; top: 0; background: var(--paper); z-index: 1; }
+    .modal-close {
+      position: absolute; top: 20px; right: 20px;
+      width: 36px; height: 36px; background: var(--paper-2);
+      border: 1px solid var(--paper-3); cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; color: var(--ink-soft);
+      transition: background 0.2s;
+    }
+    .modal-close:hover { background: var(--accent); color: white; }
+    .modal-body { padding: 32px 40px; }
+    .modal-section { margin-bottom: 28px; }
+    .modal-section h4 {
+      font-size: 0.65rem; font-weight: 600; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 12px;
+      padding-bottom: 8px; border-bottom: 1px solid var(--paper-3);
+    }
+    .modal-section p, .modal-section li { font-size: 0.88rem; color: var(--ink-soft); line-height: 1.8; }
+    .modal-section ul { display: flex; flex-direction: column; gap: 8px; }
+    .modal-section li { display: flex; gap: 12px; align-items: flex-start; }
+    .modal-section li::before { content: '—'; color: var(--accent); flex-shrink: 0; font-weight: 700; }
+    .modal-results-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .modal-chip {
+      padding: 12px 16px; border: 1px solid var(--paper-3);
+      font-size: 0.8rem; color: var(--ink);
+      display: flex; align-items: flex-start; gap: 10px;
+    }
+    .modal-chip-icon { color: var(--accent); flex-shrink: 0; }
+
+    /* ─── AUTOMATION ─────────────────────────────────────────────── */
+    #automation { background: var(--ink); padding-bottom: 80px; }
+    #automation .ed-section-head-inner { border-bottom-color: rgba(255,255,255,0.15); }
+    #automation .ed-section-title { color: var(--paper); }
+    #automation .ed-section-sub { color: rgba(255,255,255,0.4); }
+    #automation .kicker { color: #ff7a7a; }
+    #automation .section-no { color: rgba(255,255,255,0.25); }
+    .auto-layout { display: grid; grid-template-columns: 1fr 1px 1fr; gap: 0; }
+    .auto-col-div { background: rgba(255,255,255,0.08); margin: 0 48px; }
+    .auto-col { padding-bottom: 0; }
+    .live-flag {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 4px 12px; background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      font-size: 0.65rem; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: #5eff8a; margin-bottom: 16px;
+    }
+    .live-dot { width: 5px; height: 5px; border-radius: 50%; background: #5eff8a; animation: blinkGreen 2s infinite; }
+    @keyframes blinkGreen { 0%,100%{opacity:1} 50%{opacity:0.4} }
+    .auto-col h3 {
+      font-family: var(--font-display);
+      font-size: 1.35rem; font-weight: 700;
+      color: var(--paper); margin-bottom: 12px;
+    }
+    .auto-col p { font-size: 0.87rem; color: rgba(255,255,255,0.5); line-height: 1.8; margin-bottom: 20px; }
+    .auto-tools-dark { display: flex; flex-wrap: wrap; gap: 6px; }
+    .atd { padding: 4px 12px; border: 1px solid rgba(255,255,255,0.12); font-size: 0.72rem; font-weight: 500; color: rgba(255,255,255,0.55); }
+    .auto-meta-dark { margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.08); }
+    .amd-row { display: flex; justify-content: space-between; font-size: 0.78rem; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .amd-row:last-child { border-bottom: none; }
+    .amd-row span:first-child { color: rgba(255,255,255,0.3); }
+    .amd-row span:last-child { color: rgba(255,255,255,0.7); font-weight: 500; }
+    .auto-learning-dark {
+      margin-top: 40px; padding-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      display: flex; align-items: center; gap: 48px;
+    }
+    .ald-label {
+      font-family: var(--font-display);
+      font-size: 1.1rem; font-weight: 700; color: var(--paper);
+      white-space: nowrap;
+    }
+    .ald-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .ald-pill { padding: 6px 16px; border: 1px solid rgba(255,255,255,0.12); font-size: 0.75rem; font-weight: 500; color: rgba(255,255,255,0.5); }
+    .ald-pill.hot { border-color: rgba(255,122,122,0.4); color: #ff7a7a; }
+
+    /* ─── SKILLS ─────────────────────────────────────────────────── */
+    #skills { background: var(--paper-2); padding-bottom: 80px; }
+    #skills .container { padding-top: 0; }
+    .skills-layout {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 1px; background: var(--paper-3);
+      border: 1px solid var(--paper-3);
+    }
+    .skill-group {
+      background: var(--paper-2);
+      padding: 28px 28px;
+    }
+    .sg-title {
+      font-family: var(--font-display);
+      font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 16px;
+      padding-bottom: 10px; border-bottom: 1px solid var(--paper-3);
+    }
+    .sg-list { display: flex; flex-direction: column; gap: 8px; }
+    .sg-item { display: flex; gap: 10px; align-items: flex-start; font-size: 0.84rem; color: var(--ink-soft); line-height: 1.5; }
+    .sg-dash { color: var(--paper-3); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+    .tools-strip {
+      margin-top: 1px; background: var(--paper);
+      border: 1px solid var(--paper-3); border-top: none;
+      padding: 24px 28px;
+    }
+    .tools-strip-label { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 14px; }
+    .tools-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tp { padding: 5px 14px; border: 1px solid var(--paper-3); font-size: 0.78rem; font-weight: 400; color: var(--ink-soft); transition: border-color 0.2s, color 0.2s; }
+    .tp:hover { border-color: var(--ink); color: var(--ink); }
+
+    /* ─── CERTIFICATIONS ─────────────────────────────────────────── */
+    #certifications { background: var(--paper); padding-bottom: 80px; }
+    #certifications .container { padding-top: 0; }
+    .certs-layout { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--paper-3); border: 1px solid var(--paper-3); }
+    .cert-card {
+      background: var(--paper);
+      padding: 22px 24px;
+      display: flex; flex-direction: column; gap: 8px;
+      transition: background 0.2s;
+    }
+    .cert-card:hover { background: var(--paper-2); }
+    .cert-top-row { display: flex; justify-content: space-between; align-items: center; }
+    .cert-issuer-ed { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-muted); }
+    .cert-done { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #2a7a3a; }
+    .cert-name-ed {
+      font-family: var(--font-display);
+      font-size: 0.95rem; font-weight: 700;
+      color: var(--ink); line-height: 1.35;
+    }
+    .cert-cat-ed { font-size: 0.68rem; color: var(--ink-muted); font-style: italic; }
+    .cert-card.wip { background: rgba(200,0,30,0.02); }
+    .cert-card.wip .cert-done { color: var(--accent); }
+
+    /* ─── CONTACT ────────────────────────────────────────────────── */
+    #contact { background: var(--paper-2); padding-bottom: 80px; }
+    #contact .container { padding-top: 0; }
+    .contact-layout { display: grid; grid-template-columns: 1fr 1px 1fr; gap: 0; padding-top: 8px; }
+    .contact-col-div { background: var(--paper-3); margin: 0 48px; }
+    .c-links { display: flex; flex-direction: column; gap: 0; }
+    .c-link-ed {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 0; border-bottom: 1px solid var(--paper-3);
+      transition: padding-left 0.2s;
+    }
+    .c-link-ed:hover { padding-left: 8px; }
+    .c-link-left { display: flex; gap: 14px; align-items: center; }
+    .c-link-icon { font-size: 1.1rem; }
+    .c-link-label-sm { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-muted); }
+    .c-link-value-ed { font-size: 0.88rem; font-weight: 500; color: var(--ink); margin-top: 2px; }
+    .c-link-arr { color: var(--ink-muted); font-size: 0.9rem; transition: color 0.2s; }
+    .c-link-ed:hover .c-link-arr { color: var(--accent); }
+    .open-to-panel { padding-top: 0; }
+    .ot-title {
+      font-family: var(--font-display);
+      font-size: 1.6rem; font-weight: 900;
+      letter-spacing: -0.02em; color: var(--ink);
+      margin-bottom: 12px;
+    }
+    .ot-desc { font-size: 0.88rem; color: var(--ink-soft); line-height: 1.75; margin-bottom: 24px; }
+    .ot-roles { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+    .ot-role { padding: 8px 20px; background: var(--ink); color: var(--paper); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; }
+    .ot-avail { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px; }
+    .ot-chip { padding: 5px 14px; border: 1px solid var(--paper-3); font-size: 0.75rem; font-weight: 500; color: var(--ink-soft); display: flex; align-items: center; gap: 6px; }
+    .ot-chip-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--gold); }
+    .ot-sig {
+      font-family: var(--font-display);
+      font-style: italic; font-size: 1.1rem;
+      color: var(--accent); line-height: 1.5;
+      padding-top: 20px; border-top: 1px solid var(--paper-3);
+    }
+    .edu-ed { padding-top: 20px; }
+    .edu-ed-label { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 6px; }
+    .edu-ed-text { font-size: 0.85rem; color: var(--ink); line-height: 1.5; }
+
+    /* ─── FOOTER ─────────────────────────────────────────────────── */
+    footer { background: var(--ink); padding: 40px 32px; }
+    .footer-inner {
+      max-width: var(--max-w); margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+    }
+    .footer-name {
+      font-family: var(--font-display);
+      font-size: 1.1rem; font-weight: 900;
+      color: var(--paper);
+    }
+    .footer-name em { font-style: italic; color: var(--accent); }
+    .footer-copy { font-size: 0.72rem; color: rgba(255,255,255,0.3); letter-spacing: 0.08em; }
+
+    /* ─── ANIMATIONS ─────────────────────────────────────────────── */
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-up.visible { opacity: 1; transform: none; }
+
+    /* ─── RESPONSIVE ─────────────────────────────────────────────── */
+    @media(max-width:960px){
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-col-divider { display: none; }
+      .hero-col-2 { min-height: 280px; }
+      .hero-stats-strip { grid-template-columns: repeat(2,1fr); }
+      .hs-item:nth-child(2) { border-right: none; }
+      .hs-item:nth-child(3) { border-right: 1px solid var(--ink); }
+      .about-layout { grid-template-columns: 1fr; }
+      .about-col-div { display: none; }
+      .exp-layout { grid-template-columns: 1fr; }
+      .exp-left { position: static; border-right: none; padding-right: 0; border-bottom: 1px solid var(--paper-3); padding-bottom: 24px; margin-bottom: 32px; }
+      .exp-right { padding-left: 0; }
+      .case-featured { grid-template-columns: 1fr; }
+      .cf-divider { display: none; }
+      .case-grid-3 { grid-template-columns: 1fr; }
+      .auto-layout { grid-template-columns: 1fr; }
+      .auto-col-div { display: none; }
+      .auto-learning-dark { flex-direction: column; gap: 20px; }
+      .skills-layout { grid-template-columns: 1fr 1fr; }
+      .certs-layout { grid-template-columns: 1fr 1fr; }
+      .contact-layout { grid-template-columns: 1fr; }
+      .contact-col-div { display: none; }
+      .modal-results-grid { grid-template-columns: 1fr; }
+      .modal-body { padding: 24px; }
+      .modal-header { padding: 24px 24px 20px; }
+    }
+    @media(max-width:560px){
+      .skills-layout { grid-template-columns: 1fr; }
+      .certs-layout { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; }
+      .hs-item { padding: 16px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══════════════════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-top">
+    <div class="nav-logo">Priyanka <em>Lowanshi</em></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#case-studies">Projects</a></li>
+      <li><a href="#automation">Automation</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact" class="nav-cta">Connect</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#about" onclick="closeMobileNav()">About</a>
+    <a href="#experience" onclick="closeMobileNav()">Experience</a>
+    <a href="#case-studies" onclick="closeMobileNav()">Projects</a>
+    <a href="#automation" onclick="closeMobileNav()">Automation</a>
+    <a href="#skills" onclick="closeMobileNav()">Skills</a>
+    <a href="#certifications" onclick="closeMobileNav()">Certifications</a>
+    <a href="#contact" onclick="closeMobileNav()">Connect</a>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══════════════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-masthead">
+    <div class="hero-masthead-left">Personal Portfolio &nbsp;·&nbsp; Project Coordinator &amp; PM</div>
+    <div class="hero-masthead-date">Pune, Maharashtra, India &nbsp;·&nbsp; Open to New Opportunities</div>
+  </div>
+
+  <div class="hero-grid">
+    <!-- Col 1 -->
+    <div class="hero-col-1">
+      <div class="hero-issue-tag">
+        <div class="hero-issue-dot"></div>
+        <span class="hero-issue-text">4+ Years &nbsp;·&nbsp; 20+ Projects &nbsp;·&nbsp; 5 Countries</span>
+      </div>
+      <div class="hero-giant-name">
+        Priy<br>anka<br><em>Lowa<br>nshi</em>
+      </div>
+    </div>
+
+    <div class="hero-col-divider"></div>
+
+    <!-- Col 2: Photo -->
+    <div class="hero-col-2">
+      <div class="hero-photo-frame">
+        <img src="Professional_Photo.png" alt="Priyanka Lowanshi" style="width:100%;height:100%;object-fit:cover;object-position:top center;" />
+      </div>
+      <div class="hero-photo-caption">Priyanka Lowanshi — Project Coordinator &amp; PM, Pune</div>
+    </div>
+
+    <div class="hero-col-divider"></div>
+
+    <!-- Col 3 -->
+    <div class="hero-col-3">
+      <div class="hero-role-block">
+        <div class="kicker" style="margin-bottom:12px">Project Coordinator &amp; PM</div>
+        <p class="hero-role">"I don't just manage projects. I make sure they actually get done."</p>
+        <p class="hero-desc">4+ years managing 20+ complex international projects across UAE, UK, China &amp; Singapore — for ADNEC, DWTC, DMG, and Koelnmesse. 100% on-time delivery. Zero critical escalations. Now expanding into AI-powered automation.</p>
+        <div class="hero-chips">
+          <span class="hero-chip">Agile &amp; Scrum</span>
+          <span class="hero-chip">Full SDLC</span>
+          <span class="hero-chip">International PM</span>
+          <span class="hero-chip">Make.com</span>
+          <span class="hero-chip">PMP in Progress</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#case-studies" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats strip -->
+  <div class="hero-stats-strip">
+    <div class="hs-item">
+      <div class="hs-num">4+</div>
+      <div class="hs-label">Years Intl. Experience</div>
+    </div>
+    <div class="hs-item">
+      <div class="hs-num">20+</div>
+      <div class="hs-label">Projects Delivered</div>
+    </div>
+    <div class="hs-item">
+      <div class="hs-num">100%</div>
+      <div class="hs-label">On-Time Delivery</div>
+    </div>
+    <div class="hs-item">
+      <div class="hs-num">0</div>
+      <div class="hs-label">Critical Escalations</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ABOUT ══════════════════════════════════════════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="ed-section-head fade-up">
+      <div class="ed-section-head-inner">
+        <div>
+          <div class="kicker" style="margin-bottom:8px">About</div>
+          <h2 class="ed-section-title">The calm in the storm.</h2>
+        </div>
+        <p class="ed-section-sub">Project Coordinator with a track record of delivering international projects on time, every time.</p>
+      </div>
+    </div>
+    <div class="about-layout fade-up">
+      <div class="about-left about-drop-cap about-body">
+        <p>I'm Priyanka — a Project Coordinator with 4+ years of experience managing complex, multi-stakeholder projects across UAE, UK, Singapore, and China. I specialise in large-scale event technology — from exhibitor portals and registration systems to access control and badging — working with global organisers like ADNEC, DMG/DWTC, Koelnmesse, and PICO.</p>
+        <p>My work sits at the intersection of project delivery, client relationship management, and digital product coordination. I keep teams aligned, stakeholders informed, and timelines intact — even when everything is changing around me.</p>
+        <div class="about-pullquote">
+          <p>"Proactive RAID management, structured change control, and real communication — not just reports — is how I keep 20+ international projects on track simultaneously."</p>
+        </div>
+        <p>Currently expanding into AI-powered automation, building tools with Make.com to eliminate manual workflows. Actively open to Project Manager and Product Management roles where I can drive strategic delivery at scale.</p>
+      </div>
+
+      <div class="about-col-div"></div>
+
+      <div class="about-right">
+        <div class="about-highlights">
+          <div class="about-highlight">
+            <div class="ah-num">01</div>
+            <div class="ah-body">
+              <h3>International Delivery</h3>
+              <p>Managed cross-functional, multicultural teams across 5 countries — UAE, UK, China, Singapore, and India — navigating time zones, languages, and cultural nuances with zero delivery failures.</p>
+            </div>
+          </div>
+          <div class="about-highlight">
+            <div class="ah-num">02</div>
+            <div class="ah-body">
+              <h3>Live Event Technology</h3>
+              <p>Delivered registration portals, access control apps, and badging systems for events up to 195,000+ attendees — including managing a live crisis in real time with zero system failures on event day.</p>
+            </div>
+          </div>
+          <div class="about-highlight">
+            <div class="ah-num">03</div>
+            <div class="ah-body">
+              <h3>AI &amp; Automation</h3>
+              <p>Actively building no-code automations with Make.com — currently live and running daily — bringing an automation-first mindset to traditional project management workflows.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ EXPERIENCE ═════════════════════════════════════════════════ -->
+<section id="experience">
+  <div class="container">
+    <div class="ed-section-head fade-up">
+      <div class="ed-section-head-inner">
+        <div>
+          <div class="kicker" style="margin-bottom:8px">Experience</div>
+          <h2 class="ed-section-title">Where I've worked.</h2>
+        </div>
+        <p class="ed-section-sub">4+ years of international project delivery across event technology, EdTech, and SaaS.</p>
+      </div>
+    </div>
+    <div class="exp-layout fade-up">
+      <div class="exp-left">
+        <div class="section-no">Work History</div>
+        <p>From EdTech operations to managing live event technology for 195,000+ attendees — a career built on delivery under pressure.</p>
+      </div>
+      <div class="exp-right">
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-company">Hindavi Technologies</div>
+            <div class="exp-period">Aug 2022 – Present</div>
+          </div>
+          <div class="exp-role">Project Coordinator &nbsp;·&nbsp; Pune, India</div>
+          <div class="exp-bullets">
+            <div class="exp-bullet"><div class="exp-bullet-mark">—</div>Orchestrated delivery of 30+ international projects for ADNEC, DMG, Koelnmesse &amp; DWTC with 100% on-time success rate.</div>
+            <div class="exp-bullet"><div class="exp-bullet-mark">—</div>Coordinated full SDLC lifecycle for 5–8 concurrent projects using Agile — from planning through closure.</div>
+            <div class="exp-bullet"><div class="exp-bullet-mark">—</div>Facilitated all Scrum ceremonies for teams of 8–15, improving sprint velocity by 20% over 12 months.</div>
+            <div class="exp-bullet"><div class="exp-bullet-mark">—</div>Maintained RAID logs across 20+ projects, proactively reducing escalations by 40%.</div>
+            <div class="exp-bullet"><div class="exp-bullet-mark">—</div>Streamlined workflows through process mapping — reducing delays by 30% and turnaround by 15%.</div>
+            <div class="exp-bullet"><div class="exp-bullet-mark">—</div>Monitored KPIs, SLAs, and delivery metrics — improving completion rates by 25%.</div>
+            <div class="exp-bullet"><div class="exp-bullet-mark">—</div>Led stakeholder communication across 10+ cross-functional teams spanning 5 countries.</div>
+            <div class="exp-bullet"><div class="exp-bullet-mark">—</div>Managed structured change management — reducing unplanned scope changes by 20%.</div>
+          </div>
+          <div class="exp-tags">
+            <span class="exp-tag">Agile / Scrum</span><span class="exp-tag">RAID Logs</span><span class="exp-tag">Jira</span>
+            <span class="exp-tag">Power BI</span><span class="exp-tag">MS Project</span><span class="exp-tag">Change Management</span>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-company">BYJU'S</div>
+            <div class="exp-period">Jan 2022 – Jun 2022</div>
+          </div>
+          <div class="exp-role">Project Administrator &nbsp;·&nbsp; Pune, India</div>
+          <div class="exp-bullets">
+            <div class="exp-bullet"><div class="exp-bullet-mark">—</div>Supported SDLC coordination for a team of 20+ across 3 simultaneous internal projects — full documentation, task tracking, and KPI monitoring.</div>
+            <div class="exp-bullet"><div class="exp-bullet-mark">—</div>Identified process inefficiencies, contributing to a 30% increase in process efficiency over 5 months.</div>
+            <div class="exp-bullet"><div class="exp-bullet-mark">—</div>Acted as liaison between 4 cross-functional teams and senior stakeholders — reducing communication delays by 2 business days.</div>
+            <div class="exp-bullet"><div class="exp-bullet-mark">—</div>Maintained RAID tracking and MIS/status reports for full leadership transparency.</div>
+          </div>
+          <div class="exp-tags">
+            <span class="exp-tag">SDLC Coordination</span><span class="exp-tag">KPI Monitoring</span>
+            <span class="exp-tag">MIS Reporting</span><span class="exp-tag">Stakeholder Management</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CASE STUDIES ═══════════════════════════════════════════════ -->
+<section id="case-studies">
+  <div class="container">
+    <div class="ed-section-head fade-up">
+      <div class="ed-section-head-inner">
+        <div>
+          <div class="kicker" style="margin-bottom:8px">Case Studies</div>
+          <h2 class="ed-section-title">Projects that define my work.</h2>
+        </div>
+        <p class="ed-section-sub">Four in-depth case studies. Click any to read the full story.</p>
+      </div>
+    </div>
+
+    <!-- Featured case: Make It in the Emirates (biggest story) -->
+    <div class="case-featured fade-up" onclick="openModal('m3')">
+      <div class="cf-left">
+        <div>
+          <div class="case-num-large">03</div>
+          <div class="case-kicker"><span class="kicker">Flagship Project &nbsp;·&nbsp; May 2026</span></div>
+          <h3 class="case-title-ed">Make It in the Emirates 2026 — Full Event Technology Suite</h3>
+          <p class="case-desc-ed">Three interconnected platforms — registration portal, access control app, and badging system — delivered for 195,000+ attendees at a national-scale UAE government event. A mid-project crisis resolved in 5 days. CEO satisfaction. Zero system failures.</p>
+        </div>
+        <div class="case-read-more">Read Full Case Study <span>→</span></div>
+      </div>
+      <div class="cf-divider"></div>
+      <div class="cf-right">
+        <div class="cf-results-label">Key Outcomes</div>
+        <div class="cf-result-list">
+          <div class="cf-result"><div class="cf-result-line"></div>195,000+ attendees processed — zero system failures on event days</div>
+          <div class="cf-result"><div class="cf-result-line"></div>Critical crisis resolved in 5 days — zero impact on delivery date</div>
+          <div class="cf-result"><div class="cf-result-line"></div>CEO of ADNEC expressed direct satisfaction with delivery</div>
+          <div class="cf-result"><div class="cf-result-line"></div>Cited internally as model for future large-scale event delivery</div>
+        </div>
+        <div class="cf-meta">
+          <div class="cf-meta-row"><span>Client</span><span>ADNEC Group</span></div>
+          <div class="cf-meta-row"><span>Location</span><span>Abu Dhabi, UAE</span></div>
+          <div class="cf-meta-row"><span>Scale</span><span>195,000+ Attendees</span></div>
+          <div class="cf-meta-row"><span>Platforms</span><span>Registration · Access Control · Badging</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 smaller cases in a grid -->
+    <div class="case-grid-3 fade-up">
+
+      <div class="case-small" onclick="openModal('m1')">
+        <div class="cs-num">01</div>
+        <div class="cs-kicker"><span class="kicker">Dubai, UAE</span></div>
+        <h3 class="cs-title">Gulfood 2025 — Exhibitor Lifecycle Management</h3>
+        <p class="cs-desc">End-to-end exhibitor journey for the world's largest food &amp; beverage trade show — 2,000+ exhibitors from 100+ countries.</p>
+        <div class="cs-results">
+          <div class="cs-result"><div class="cs-dot"></div>100% on-time delivery</div>
+          <div class="cs-result"><div class="cs-dot"></div>40% escalation reduction via RAID</div>
+          <div class="cs-result"><div class="cs-dot"></div>Zero critical escalations live</div>
+        </div>
+        <div class="cs-cta">Read more <span>→</span></div>
+      </div>
+
+      <div class="case-small" onclick="openModal('m2')">
+        <div class="cs-num">02</div>
+        <div class="cs-kicker"><span class="kicker">Abu Dhabi, UAE</span></div>
+        <h3 class="cs-title">UMEX 2026 — Registration &amp; Onboarding Portal</h3>
+        <p class="cs-desc">High-scale attendee registration portal for 10,000+ registrants — 3 dev teams, 2 client organisations, zero critical bugs at launch.</p>
+        <div class="cs-results">
+          <div class="cs-result"><div class="cs-dot"></div>10,000+ attendees onboarded on time</div>
+          <div class="cs-result"><div class="cs-dot"></div>Zero bugs at launch</div>
+          <div class="cs-result"><div class="cs-dot"></div>Retained for 2026 engagement</div>
+        </div>
+        <div class="cs-cta">Read more <span>→</span></div>
+      </div>
+
+      <div class="case-small" onclick="openModal('m4')">
+        <div class="cs-num">04</div>
+        <div class="cs-kicker"><span class="kicker">China &nbsp;·&nbsp; Retained Client</span></div>
+        <h3 class="cs-title">LTE 2025 &amp; 2026 — Exhibitor Portal &amp; Chinese Localisation</h3>
+        <p class="cs-desc">Full Simplified Chinese localisation of an exhibitor portal — language barriers, cultural gaps, multiple revision cycles. Client retained for year two without re-pitching.</p>
+        <div class="cs-results">
+          <div class="cs-result"><div class="cs-dot"></div>Full Chinese localisation approved</div>
+          <div class="cs-result"><div class="cs-dot"></div>100% on-time despite complexity</div>
+          <div class="cs-result"><div class="cs-dot"></div>Retained for LTE 2026</div>
+        </div>
+        <div class="cs-cta">Read more <span>→</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MODALS ══════════════════════════════════════════════════════ -->
+<div class="modal-overlay" id="m1">
+  <div class="modal">
+    <div class="modal-accent-bar"></div>
+    <div class="modal-header">
+      <div class="kicker" style="margin-bottom:8px">Case Study 01 · Gulfood 2025</div>
+      <h2 style="font-family:var(--font-display);font-size:1.5rem;font-weight:900;letter-spacing:-0.02em;color:var(--ink)">Exhibitor Lifecycle Management System</h2>
+      <button class="modal-close" onclick="closeModal('m1')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section"><h4>Overview</h4><p>Client: DMG Events / DWTC · Dubai, UAE · 2,000+ exhibitors from 100+ countries · Team of 8–12 · Agile / Scrum methodology.</p></div>
+      <div class="modal-section"><h4>The Challenge</h4><ul>
+        <li>Managing the full lifecycle of 2,000+ exhibitors across 100+ countries</li>
+        <li>Coordinating multiple internal teams without a centralised communication structure</li>
+        <li>Fixed live event deadline with zero flexibility</li>
+        <li>Frequent mid-project change requests from the client</li>
+        <li>Complex backend integrations across exhibitor data modules</li>
+      </ul></div>
+      <div class="modal-section"><h4>My Approach</h4><ul>
+        <li>Coordinated full SDLC from requirements through to live deployment</li>
+        <li>Facilitated all Scrum ceremonies for 8–12 members — sprint velocity improved 20%</li>
+        <li>Built and maintained comprehensive RAID log — directly cutting escalations by 40%</li>
+        <li>All change requests assessed for impact before approval — controlled execution throughout</li>
+        <li>Proactively resolved dependency conflicts via daily standups and dependency tracking</li>
+      </ul></div>
+      <div class="modal-section"><h4>Results</h4>
+        <div class="modal-results-grid">
+          <div class="modal-chip"><div class="modal-chip-icon">✓</div>100% on-time delivery</div>
+          <div class="modal-chip"><div class="modal-chip-icon">✓</div>Zero critical escalations live</div>
+          <div class="modal-chip"><div class="modal-chip-icon">↓</div>40% reduction in escalations</div>
+          <div class="modal-chip"><div class="modal-chip-icon">↑</div>20% sprint velocity improvement</div>
+          <div class="modal-chip"><div class="modal-chip-icon">↓</div>30% workflow bottleneck reduction</div>
+          <div class="modal-chip"><div class="modal-chip-icon">●</div>Full executive visibility maintained</div>
+        </div>
+      </div>
+      <div class="modal-section"><h4>Tools</h4><div class="exp-tags"><span class="exp-tag">Jira</span><span class="exp-tag">Confluence</span><span class="exp-tag">MS Excel</span><span class="exp-tag">Google Sheets</span><span class="exp-tag">Smartsheet</span><span class="exp-tag">Power BI</span><span class="exp-tag">MS Project</span></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m2">
+  <div class="modal">
+    <div class="modal-accent-bar"></div>
+    <div class="modal-header">
+      <div class="kicker" style="margin-bottom:8px">Case Study 02 · UMEX 2026</div>
+      <h2 style="font-family:var(--font-display);font-size:1.5rem;font-weight:900;letter-spacing:-0.02em;color:var(--ink)">Registration &amp; User Onboarding Portal</h2>
+      <button class="modal-close" onclick="closeModal('m2')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section"><h4>Overview</h4><p>Client: ADNEC · UMEX 2026 · Abu Dhabi, UAE · 10,000+ attendees · Government &amp; Defence sector · 8–10 team members.</p></div>
+      <div class="modal-section"><h4>The Challenge</h4><ul>
+        <li>Registration portal for 10,000+ attendees within a strict deadline</li>
+        <li>Complex user roles — exhibitors, visitors, press, VIPs, government delegates</li>
+        <li>Data accuracy and security compliance for a government/defence audience</li>
+        <li>Multiple UAT rounds with the client — feedback collated and tracked to closure</li>
+        <li>Managing vendor dependencies and cross-functional teams simultaneously</li>
+      </ul></div>
+      <div class="modal-section"><h4>My Approach</h4><ul>
+        <li>Requirements gathering with ADNEC stakeholders — user stories in Confluence</li>
+        <li>Managed three UAT rounds — all bugs tracked and resolved before launch</li>
+        <li>Designed onboarding flows for each attendee category; coordinated all comms templates</li>
+        <li>Weekly Power BI dashboards for ADNEC leadership throughout delivery</li>
+      </ul></div>
+      <div class="modal-section"><h4>Results</h4>
+        <div class="modal-results-grid">
+          <div class="modal-chip"><div class="modal-chip-icon">✓</div>Delivered ahead of go-live deadline</div>
+          <div class="modal-chip"><div class="modal-chip-icon">✓</div>10,000+ attendees onboarded</div>
+          <div class="modal-chip"><div class="modal-chip-icon">✓</div>Zero critical bugs at launch</div>
+          <div class="modal-chip"><div class="modal-chip-icon">✓</div>Retained for Make It in Emirates 2026</div>
+        </div>
+      </div>
+      <div class="modal-section"><h4>Tools</h4><div class="exp-tags"><span class="exp-tag">Jira</span><span class="exp-tag">Confluence</span><span class="exp-tag">Power BI</span><span class="exp-tag">MS Project</span><span class="exp-tag">Google Sheets</span></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m3">
+  <div class="modal">
+    <div class="modal-accent-bar"></div>
+    <div class="modal-header">
+      <div class="kicker" style="margin-bottom:8px">Case Study 03 · Flagship · Make It in the Emirates 2026</div>
+      <h2 style="font-family:var(--font-display);font-size:1.5rem;font-weight:900;letter-spacing:-0.02em;color:var(--ink)">Full Event Technology Suite — 195,000+ Attendees</h2>
+      <button class="modal-close" onclick="closeModal('m3')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section"><h4>Overview</h4><p>Client: ADNEC Group · National-scale UAE government event · Abu Dhabi · Three platforms: Registration Portal, Access Control App, Badging Portal · 195,000+ attendees · May 2026.</p></div>
+      <div class="modal-section"><h4>The Challenge</h4><ul>
+        <li>Coordinating three interconnected platforms simultaneously</li>
+        <li>Critical third-party integration failure two weeks before go-live</li>
+        <li>Unprecedented surge of 195,000+ attendees — far exceeding original projections</li>
+        <li>C-suite and government-level stakeholder scrutiny throughout</li>
+      </ul></div>
+      <div class="modal-section"><h4>The Crisis — How I Handled It</h4><ul>
+        <li>Emergency cross-functional meeting immediately convened with tech leads and vendors</li>
+        <li>Full impact mapped — rapid fallback integration pathway identified and coordinated</li>
+        <li>Transparent daily crisis updates to ADNEC — calm, clear, no surprises</li>
+        <li>Crisis resolved in 5 days — zero impact on go-live date</li>
+      </ul></div>
+      <div class="modal-section"><h4>Results</h4>
+        <div class="modal-results-grid">
+          <div class="modal-chip"><div class="modal-chip-icon">✓</div>195,000+ attendees — zero system failures</div>
+          <div class="modal-chip"><div class="modal-chip-icon">✓</div>Crisis resolved in 5 days</div>
+          <div class="modal-chip"><div class="modal-chip-icon">✓</div>CEO of ADNEC satisfaction expressed directly</div>
+          <div class="modal-chip"><div class="modal-chip-icon">✓</div>Zero critical escalations throughout</div>
+          <div class="modal-chip"><div class="modal-chip-icon">✓</div>30% workflow bottleneck reduction</div>
+          <div class="modal-chip"><div class="modal-chip-icon">✓</div>Cited as model for future events</div>
+        </div>
+      </div>
+      <div class="modal-section"><h4>Tools</h4><div class="exp-tags"><span class="exp-tag">MS Project</span><span class="exp-tag">Jira</span><span class="exp-tag">Confluence</span><span class="exp-tag">Power BI</span><span class="exp-tag">Smartsheet</span><span class="exp-tag">MS Excel</span></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="m4">
+  <div class="modal">
+    <div class="modal-accent-bar"></div>
+    <div class="modal-header">
+      <div class="kicker" style="margin-bottom:8px">Case Study 04 · PICO / LTE China</div>
+      <h2 style="font-family:var(--font-display);font-size:1.5rem;font-weight:900;letter-spacing:-0.02em;color:var(--ink)">Exhibitor Portal &amp; Simplified Chinese Localisation</h2>
+      <button class="modal-close" onclick="closeModal('m4')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section"><h4>Overview</h4><p>Client: PICO International · LTE 2025 &amp; LTE 2026 · Learning &amp; Teaching Expo, China · Exhibitor Portal + Exhibitor Listing + Full Simplified Chinese Localisation · 2024–2026 (ongoing).</p></div>
+      <div class="modal-section"><h4>The Challenge</h4><ul>
+        <li>Complete localisation into Simplified Chinese — UI, forms, emails, and listings</li>
+        <li>Significant language barrier between Indian dev team and Chinese client</li>
+        <li>Cultural differences in communication, approvals, and business etiquette</li>
+        <li>Multiple revision cycles for linguistic and cultural accuracy</li>
+        <li>Time zone differences compounding coordination complexity</li>
+      </ul></div>
+      <div class="modal-section"><h4>My Approach</h4><ul>
+        <li>Structured communication protocol — all requirements documented in both languages</li>
+        <li>Dedicated localisation tracker — every element mapped to translation, review, approval</li>
+        <li>Buffer time built into roadmap for revision cycles — all completed within plan</li>
+        <li>Fixed weekly calls with bilingual written summaries after every session</li>
+      </ul></div>
+      <div class="modal-section"><h4>Results</h4>
+        <div class="modal-results-grid">
+          <div class="modal-chip"><div class="modal-chip-icon">✓</div>Full Simplified Chinese localisation approved</div>
+          <div class="modal-chip"><div class="modal-chip-icon">✓</div>100% on-time delivery</div>
+          <div class="modal-chip"><div class="modal-chip-icon">✓</div>PICO retained for LTE 2026 — no re-pitch</div>
+          <div class="modal-chip"><div class="modal-chip-icon">✓</div>Scope expanded for 2026</div>
+        </div>
+      </div>
+      <div class="modal-section"><h4>Tools</h4><div class="exp-tags"><span class="exp-tag">Jira</span><span class="exp-tag">MS Project</span><span class="exp-tag">Google Sheets</span><span class="exp-tag">Confluence</span><span class="exp-tag">Smartsheet</span></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ AUTOMATION ══════════════════════════════════════════════════ -->
+<section id="automation">
+  <div class="container">
+    <div class="ed-section-head fade-up">
+      <div class="ed-section-head-inner">
+        <div>
+          <div class="kicker" style="margin-bottom:8px">AI &amp; Automation</div>
+          <h2 class="ed-section-title">Building the future<br>of PM workflows.</h2>
+        </div>
+        <p class="ed-section-sub">No-code automations built with Make.com — currently live and running in production.</p>
+      </div>
+    </div>
+    <div class="auto-layout fade-up">
+      <div class="auto-col">
+        <div class="live-flag"><div class="live-dot"></div>Live &amp; Active</div>
+        <h3>Daily Morning Wellness Reminder</h3>
+        <p>Automated daily wellness reminder sending a personalised HTML email every morning at 8:00 AM IST. Built with Make.com in a single session — zero coding required. Fully live and running daily.</p>
+        <div class="auto-tools-dark">
+          <span class="atd">Make.com</span><span class="atd">Gmail</span><span class="atd">HTML Email</span><span class="atd">Scheduler</span>
+        </div>
+        <div class="auto-meta-dark">
+          <div class="amd-row"><span>Trigger</span><span>Daily at 8:00 AM IST</span></div>
+          <div class="amd-row"><span>Output</span><span>Personalised HTML email</span></div>
+          <div class="amd-row"><span>Impact</span><span>Zero manual effort · Fully automated</span></div>
+        </div>
+      </div>
+
+      <div class="auto-col-div"></div>
+
+      <div class="auto-col">
+        <div class="live-flag"><div class="live-dot"></div>Live &amp; Active</div>
+        <h3>Gmail → Google Sheets Request Tracker</h3>
+        <p>Automated request tracking that watches Gmail and logs every incoming request into Google Sheets in real time — capturing date, sender, subject, and status. Mirrors professional PM request management workflows exactly.</p>
+        <div class="auto-tools-dark">
+          <span class="atd">Make.com</span><span class="atd">Gmail</span><span class="atd">Google Sheets</span><span class="atd">Data Mapping</span>
+        </div>
+        <div class="auto-meta-dark">
+          <div class="amd-row"><span>Trigger</span><span>Every 15 mins · Gmail watch</span></div>
+          <div class="amd-row"><span>Output</span><span>Auto-logged row in Google Sheets</span></div>
+          <div class="amd-row"><span>Impact</span><span>Zero copy-paste · Full audit trail</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="auto-learning-dark fade-up">
+      <div class="ald-label">Currently Learning</div>
+      <div class="ald-pills">
+        <span class="ald-pill hot">Make.com Advanced · In Progress</span>
+        <span class="ald-pill">n8n Automation · Upcoming</span>
+        <span class="ald-pill hot">PMP Certification · In Progress</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SKILLS ═════════════════════════════════════════════════════ -->
+<section id="skills">
+  <div class="container">
+    <div class="ed-section-head fade-up">
+      <div class="ed-section-head-inner">
+        <div>
+          <div class="kicker" style="margin-bottom:8px">Skills &amp; Tools</div>
+          <h2 class="ed-section-title">What I bring to every project.</h2>
+        </div>
+      </div>
+    </div>
+    <div class="skills-layout fade-up">
+      <div class="skill-group"><div class="sg-title">Project Management</div><div class="sg-list">
+        <div class="sg-item"><div class="sg-dash">—</div>Agile &amp; Scrum Methodology</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Full SDLC Coordination</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Sprint Planning &amp; Ceremonies</div>
+        <div class="sg-item"><div class="sg-dash">—</div>PMO Reporting</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Gantt Chart &amp; Roadmap Planning</div>
+        <div class="sg-item"><div class="sg-dash">—</div>UAT Coordination</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Waterfall / Hybrid Delivery</div>
+      </div></div>
+      <div class="skill-group"><div class="sg-title">Risk &amp; Operations</div><div class="sg-list">
+        <div class="sg-item"><div class="sg-dash">—</div>RAID Log Management</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Risk Mitigation &amp; Issue Resolution</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Change Management</div>
+        <div class="sg-item"><div class="sg-dash">—</div>SLA Management</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Vendor Management</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Escalation Management</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Resource Planning</div>
+      </div></div>
+      <div class="skill-group"><div class="sg-title">Strategy &amp; Execution</div><div class="sg-list">
+        <div class="sg-item"><div class="sg-dash">—</div>KPI &amp; Metrics Tracking</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Budget Tracking</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Process Improvement</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Cross-Functional Leadership</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Stakeholder Management</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Client Relationship Management</div>
+        <div class="sg-item"><div class="sg-dash">—</div>MIS &amp; Dashboard Reporting</div>
+      </div></div>
+      <div class="skill-group"><div class="sg-title">Event Technology</div><div class="sg-list">
+        <div class="sg-item"><div class="sg-dash">—</div>Registration &amp; Onboarding Portals</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Exhibitor Lifecycle Management</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Access Control Systems</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Vetting &amp; Badging Platforms</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Backend Integration Coordination</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Live Event Deployment</div>
+      </div></div>
+      <div class="skill-group"><div class="sg-title">AI &amp; Automation</div><div class="sg-list">
+        <div class="sg-item"><div class="sg-dash">—</div>Make.com (Live Automations Built)</div>
+        <div class="sg-item"><div class="sg-dash">—</div>n8n (In Progress)</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Prompt Engineering for PM</div>
+        <div class="sg-item"><div class="sg-dash">—</div>ChatGPT &amp; Microsoft Copilot</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Generative AI Applications</div>
+      </div></div>
+      <div class="skill-group"><div class="sg-title">Soft Skills</div><div class="sg-list">
+        <div class="sg-item"><div class="sg-dash">—</div>Cross-Cultural Communication</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Calm Under Pressure</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Problem Solving</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Team Coordination</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Continuous Improvement</div>
+        <div class="sg-item"><div class="sg-dash">—</div>Multicultural Team Leadership</div>
+      </div></div>
+    </div>
+    <div class="tools-strip fade-up">
+      <div class="tools-strip-label">Tools &amp; Platforms</div>
+      <div class="tools-pills">
+        <span class="tp">Jira</span><span class="tp">Power BI</span><span class="tp">MS Project</span>
+        <span class="tp">Confluence</span><span class="tp">Smartsheet</span><span class="tp">MS Excel</span>
+        <span class="tp">Google Sheets</span><span class="tp">MS Office Suite</span><span class="tp">Make.com</span>
+        <span class="tp">Notion</span><span class="tp">ChatGPT</span><span class="tp">Microsoft Copilot</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CERTIFICATIONS ═════════════════════════════════════════════ -->
+<section id="certifications">
+  <div class="container">
+    <div class="ed-section-head fade-up">
+      <div class="ed-section-head-inner">
+        <div>
+          <div class="kicker" style="margin-bottom:8px">Certifications</div>
+          <h2 class="ed-section-title">Committed to continuous learning.</h2>
+        </div>
+      </div>
+    </div>
+    <div class="certs-layout fade-up">
+      <div class="cert-card"><div class="cert-top-row"><div class="cert-issuer-ed">Microsoft</div><div class="cert-done">✓ Done</div></div><div class="cert-name-ed">Microsoft Power BI Data Analyst</div><div class="cert-cat-ed">Data Analytics &amp; Visualisation</div></div>
+      <div class="cert-card"><div class="cert-top-row"><div class="cert-issuer-ed">Google / Coursera</div><div class="cert-done">✓ Done</div></div><div class="cert-name-ed">Foundations of Project Management</div><div class="cert-cat-ed">PM Fundamentals</div></div>
+      <div class="cert-card"><div class="cert-top-row"><div class="cert-issuer-ed">Google / Coursera</div><div class="cert-done">✓ Done</div></div><div class="cert-name-ed">Project Initiation: Starting a Successful Project</div><div class="cert-cat-ed">PM Methodology</div></div>
+      <div class="cert-card"><div class="cert-top-row"><div class="cert-issuer-ed">Google / Coursera</div><div class="cert-done">✓ Done</div></div><div class="cert-name-ed">Project Execution: Running the Project</div><div class="cert-cat-ed">PM Execution</div></div>
+      <div class="cert-card"><div class="cert-top-row"><div class="cert-issuer-ed">Google / Coursera</div><div class="cert-done">✓ Done</div></div><div class="cert-name-ed">Agile Project Management</div><div class="cert-cat-ed">Agile &amp; Scrum</div></div>
+      <div class="cert-card"><div class="cert-top-row"><div class="cert-issuer-ed">AI / Online</div><div class="cert-done">✓ Done</div></div><div class="cert-name-ed">Prompt Engineering for Project Managers</div><div class="cert-cat-ed">AI for PM</div></div>
+      <div class="cert-card"><div class="cert-top-row"><div class="cert-issuer-ed">Google / Online</div><div class="cert-done">✓ Done</div></div><div class="cert-name-ed">Introduction to Generative AI</div><div class="cert-cat-ed">AI Literacy</div></div>
+      <div class="cert-card"><div class="cert-top-row"><div class="cert-issuer-ed">Online</div><div class="cert-done">✓ Done</div></div><div class="cert-name-ed">Practical Application of GenAI for Project Managers</div><div class="cert-cat-ed">Applied AI for PM</div></div>
+      <div class="cert-card wip"><div class="cert-top-row"><div class="cert-issuer-ed">PMI</div><div class="cert-done">In Progress</div></div><div class="cert-name-ed">Project Management Professional (PMP)</div><div class="cert-cat-ed">Advanced PM Certification</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ════════════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="ed-section-head fade-up">
+      <div class="ed-section-head-inner">
+        <div>
+          <div class="kicker" style="margin-bottom:8px">Let's Connect</div>
+          <h2 class="ed-section-title">Ready to work together?</h2>
+        </div>
+        <p class="ed-section-sub">Open to Project Manager, Project Coordinator, and Product Manager roles — remote, hybrid, or on-site.</p>
+      </div>
+    </div>
+    <div class="contact-layout fade-up">
+      <div>
+        <div class="c-links">
+          <a href="mailto:prynca2604@gmail.com" class="c-link-ed">
+            <div class="c-link-left"><div class="c-link-icon">📧</div><div><div class="c-link-label-sm">Email</div><div class="c-link-value-ed">prynca2604@gmail.com</div></div></div>
+            <div class="c-link-arr">→</div>
+          </a>
+          <a href="https://www.linkedin.com/in/priyanka-lowanshi-994bbb229/" target="_blank" rel="noopener" class="c-link-ed">
+            <div class="c-link-left"><div class="c-link-icon">💼</div><div><div class="c-link-label-sm">LinkedIn</div><div class="c-link-value-ed">linkedin.com/in/priyanka-lowanshi</div></div></div>
+            <div class="c-link-arr">→</div>
+          </a>
+          <a href="https://scented-nutria-bf3.notion.site/Priyanka-Lowanshi-PM-Portfolio-35effcceea4b803fa4b4e499b2467330" target="_blank" rel="noopener" class="c-link-ed">
+            <div class="c-link-left"><div class="c-link-icon">📁</div><div><div class="c-link-label-sm">Notion Portfolio</div><div class="c-link-value-ed">View Full Case Studies</div></div></div>
+            <div class="c-link-arr">→</div>
+          </a>
+          <div class="c-link-ed">
+            <div class="c-link-left"><div class="c-link-icon">📍</div><div><div class="c-link-label-sm">Location</div><div class="c-link-value-ed">Pune, Maharashtra, India</div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-col-div"></div>
+
+      <div class="open-to-panel">
+        <h3 class="ot-title">Open to Opportunities</h3>
+        <p class="ot-desc">Actively looking for my next role where I can bring international project delivery experience, Agile expertise, and an automation-forward mindset to a high-impact team.</p>
+        <div class="ot-roles">
+          <span class="ot-role">Project Manager</span>
+          <span class="ot-role">Project Coordinator</span>
+          <span class="ot-role">Product Manager</span>
+        </div>
+        <div class="ot-avail">
+          <div class="ot-chip"><div class="ot-chip-dot"></div>Remote</div>
+          <div class="ot-chip"><div class="ot-chip-dot"></div>Hybrid</div>
+          <div class="ot-chip"><div class="ot-chip-dot"></div>On-site</div>
+        </div>
+        <div class="edu-ed">
+          <div class="edu-ed-label">Education</div>
+          <div class="edu-ed-text"><strong>Master of Public Administration</strong><br>Sarojini Naidu Autonomous College, Bhopal, India</div>
+        </div>
+        <div class="ot-sig">"I don't just manage projects. I make sure they actually get done."</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═════════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-name">Priyanka <em>Lowanshi</em></div>
+    <div class="footer-copy">© 2026 &nbsp;·&nbsp; priyankalowanshi.com &nbsp;·&nbsp; Pune, Maharashtra, India</div>
+  </div>
+</footer>
+
+<!-- ═══ SCRIPTS ════════════════════════════════════════════════════ -->
+<script>
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 40));
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => mobileNav.classList.toggle('open'));
+  function closeMobileNav() { mobileNav.classList.remove('open'); }
+  function openModal(id) { document.getElementById(id).classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeModal(id) { document.getElementById(id).classList.remove('open'); document.body.style.overflow = ''; }
+  document.querySelectorAll('.modal-overlay').forEach(o => o.addEventListener('click', e => { if(e.target===o) closeModal(o.id); }));
+  document.addEventListener('keydown', e => { if(e.key==='Escape') document.querySelectorAll('.modal-overlay.open').forEach(m => closeModal(m.id)); });
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); observer.unobserve(e.target); }});
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
