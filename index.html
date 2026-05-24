@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priyanka Lowanshi — Project Coordinator & PM</title>
+  <meta name="description" content="Project Coordinator with 4+ years managing 20+ international projects across UAE, UK, China & Singapore." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Freight+Display+Pro:ital,wght@0,300;0,400;1,300;1,400&family=Cabinet+Grotesk:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      /* Rich warm deep palette */
+      --ink:        #12100e;
+      --ink-2:      #1c2b1e;
+      --ink-3:      #2e3d2f;
+
+      --cream:      #f4f9f4;
+      --cream-2:    #edf4ed;
+      --cream-3:    #d8e5d8;
+      --sand:       #c8d9c8;
+      --taupe:      #7a9e7e;
+      --brown:      #4a6b4e;
+      --espresso:   #1c2b1e;
+      --charcoal:   #111a13;
+
+      --gold:       #c9922a;
+      --gold-l:     #f7e8cc;
+      --gold-ll:    #fdf5e8;
+      --rust:       #5c8a5e;
+      --rust-l:     #e4f0e4;
+      --forest:     #2e5c3e;
+      --forest-l:   #e4efe8;
+
+      --shadow-warm: rgba(28,43,30,0.10);
+      --shadow-deep: rgba(28,43,30,0.20);
+
+      --font-display: 'Cormorant', Georgia, serif;
+      --font-body:    'Outfit', sans-serif;
+      --max-w: 1120px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 28px; }
+
+    /* ════════════════════════════════════════
+       NAV
+    ════════════════════════════════════════ */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(250,246,239,0.92);
+      backdrop-filter: blur(16px) saturate(180%);
+      border-bottom: 1px solid var(--cream-3);
+      transition: box-shadow 0.4s;
+    }
+    nav.scrolled { box-shadow: 0 4px 32px var(--shadow-warm); }
+    .nav-inner {
+      max-width: var(--max-w); margin: 0 auto; padding: 0 28px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 62px;
+    }
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.3rem; font-weight: 500;
+      color: var(--espresso); letter-spacing: 0.01em;
+    }
+    .nav-logo em { font-style: italic; color: var(--gold); }
+    .nav-links { display: flex; gap: 2px; align-items: center; }
+    .nav-links a {
+      padding: 6px 14px; border-radius: 100px;
+      font-size: 0.78rem; font-weight: 500;
+      letter-spacing: 0.04em; color: var(--brown);
+      transition: background 0.2s, color 0.2s;
+    }
+    .nav-links a:hover { background: var(--cream-2); color: var(--espresso); }
+    .nav-cta {
+      padding: 8px 20px !important;
+      background: var(--espresso) !important; color: var(--cream) !important;
+      border-radius: 100px !important; font-weight: 600 !important;
+      font-size: 0.76rem !important;
+      transition: background 0.2s, transform 0.15s !important;
+      box-shadow: 0 4px 14px var(--shadow-warm) !important;
+    }
+    .nav-cta:hover { background: var(--gold) !important; transform: translateY(-1px); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .hamburger span { display: block; width: 22px; height: 1.5px; background: var(--espresso); border-radius: 2px; transition: 0.3s; }
+    .mobile-nav { display: none; flex-direction: column; background: var(--cream); border-top: 1px solid var(--cream-3); padding: 12px 28px 20px; }
+    .mobile-nav a { padding: 11px 0; font-size: 0.9rem; font-weight: 500; color: var(--ink-3); border-bottom: 1px solid var(--cream-3); }
+    .mobile-nav a:last-child { border-bottom: none; }
+    .mobile-nav.open { display: flex; }
+
+    /* ════════════════════════════════════════
+       HERO — FULL BLEED DRAMATIC SPLIT
+    ════════════════════════════════════════ */
+    #hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 480px;
+      position: relative;
+      overflow: hidden;
+      padding-top: 62px;
+    }
+
+    /* Left: rich deep espresso panel */
+    .hero-left {
+      background: var(--espresso);
+      padding: 80px 64px 80px 80px;
+      display: flex; flex-direction: column; justify-content: center;
+      position: relative; overflow: hidden;
+    }
+    .hero-left::before {
+      content: '';
+      position: absolute; top: -200px; left: -200px;
+      width: 600px; height: 600px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,146,42,0.14) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .hero-left::after {
+      content: '';
+      position: absolute; bottom: -100px; right: -100px;
+      width: 400px; height: 400px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(46,92,62,0.15) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    /* big decorative number */
+    .hero-bg-number {
+      position: absolute; right: -20px; bottom: 20px;
+      font-family: var(--font-display);
+      font-size: 280px; font-weight: 300;
+      color: rgba(255,255,255,0.04);
+      line-height: 1; pointer-events: none;
+      user-select: none;
+    }
+
+    .hero-eyebrow {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 32px;
+    }
+    .hero-eyebrow-line { width: 40px; height: 1px; background: #2e5c3e; }
+    .hero-eyebrow span {
+      font-size: 0.68rem; font-weight: 600;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .hero-name {
+      font-family: var(--font-display);
+      font-size: clamp(3.5rem, 6vw, 5.5rem);
+      font-weight: 300; letter-spacing: -0.01em;
+      color: var(--cream); line-height: 1.0;
+      margin-bottom: 12px;
+    }
+    .hero-name strong { font-weight: 600; display: block; }
+    .hero-name em { font-style: italic; color: var(--gold); font-weight: 300; }
+
+    .hero-title {
+      font-size: 0.88rem; font-weight: 500;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: rgba(250,246,239,0.45);
+      margin-bottom: 32px;
+    }
+
+    .hero-desc {
+      font-size: 1rem; font-weight: 300;
+      color: rgba(250,246,239,0.7);
+      line-height: 1.85; max-width: 420px;
+      margin-bottom: 40px;
+    }
+
+    .hero-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 44px; }
+    .hero-badge {
+      padding: 5px 14px; border-radius: 100px;
+      border: 1px solid rgba(255,255,255,0.12);
+      font-size: 0.72rem; font-weight: 500;
+      color: rgba(250,246,239,0.6);
+      background: rgba(255,255,255,0.04);
+    }
+    .hero-badge.gold {
+      border-color: rgba(201,146,42,0.4);
+      color: var(--gold);
+      background: rgba(201,146,42,0.08);
+    }
+
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-gold {
+      padding: 13px 30px; border-radius: 100px;
+      background: #2e5c3e; color: #f4f9f4;
+      font-size: 0.82rem; font-weight: 700;
+      letter-spacing: 0.06em;
+      box-shadow: 0 8px 28px rgba(201,146,42,0.35);
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    }
+    .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 12px 36px rgba(201,146,42,0.45); background: #d4a030; }
+    .btn-outline-light {
+      padding: 13px 30px; border-radius: 100px;
+      border: 1px solid rgba(255,255,255,0.2);
+      color: rgba(250,246,239,0.85);
+      font-size: 0.82rem; font-weight: 500;
+      letter-spacing: 0.06em;
+      transition: border-color 0.2s, background 0.2s, transform 0.2s;
+    }
+    .btn-outline-light:hover { border-color: rgba(255,255,255,0.4); background: rgba(255,255,255,0.06); transform: translateY(-2px); }
+
+    /* Stat strip inside hero-left */
+    .hero-stats {
+      display: flex; gap: 0;
+      margin-top: 56px; padding-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .hs-item { flex: 1; padding-right: 24px; border-right: 1px solid rgba(255,255,255,0.08); margin-right: 24px; }
+    .hs-item:last-child { border-right: none; margin-right: 0; padding-right: 0; }
+    .hs-n {
+      font-family: var(--font-display);
+      font-size: 2.2rem; font-weight: 500;
+      color: var(--gold); line-height: 1;
+      margin-bottom: 5px;
+    }
+    .hs-l { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255,255,255,0.35); line-height: 1.4; }
+
+    /* Right: cream/photo panel */
+    .hero-right {
+      background: var(--cream-2);
+      position: relative; overflow: hidden;
+      display: flex; flex-direction: column;
+    }
+    /* Subtle pattern texture */
+    .hero-right::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: radial-gradient(circle at 1px 1px, rgba(46,92,62,0.10) 1px, transparent 0);
+      background-size: 28px 28px;
+      pointer-events: none; z-index: 0;
+    }
+    .hero-photo-wrap {
+      flex: 1;
+      position: relative; z-index: 1;
+      overflow: hidden;
+    }
+    .hero-photo-wrap img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: top center;
+      display: block;
+    }
+    /* gradient fade at bottom of photo */
+    .hero-photo-wrap::after {
+      content: '';
+      position: absolute; bottom: 0; left: 0; right: 0;
+      height: 180px;
+      background: linear-gradient(to top, var(--cream-2) 0%, transparent 100%);
+    }
+    .hero-info-card {
+      position: relative; z-index: 1;
+      background: var(--cream);
+      margin: 0 28px 28px;
+      border-radius: 18px;
+      padding: 24px 28px;
+      box-shadow: 0 8px 40px var(--shadow-warm);
+      border: 1px solid var(--cream-3);
+    }
+    .hic-name {
+      font-family: var(--font-display);
+      font-size: 1.2rem; font-weight: 500;
+      color: var(--espresso); margin-bottom: 2px;
+    }
+    .hic-role { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--taupe); margin-bottom: 16px; }
+    .hic-available {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 4px 12px; border-radius: 100px;
+      background: var(--forest-l); border: 1px solid rgba(46,92,62,0.2);
+      font-size: 0.68rem; font-weight: 600; color: var(--forest);
+    }
+    .hic-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--forest); animation: pulse-g 2s infinite; }
+    @keyframes pulse-g { 0%,100%{box-shadow:0 0 0 0 rgba(201,146,42,0.5)} 50%{box-shadow:0 0 0 5px rgba(201,146,42,0)} }
+
+    /* ════════════════════════════════════════
+       TICKER STRIP
+    ════════════════════════════════════════ */
+    .ticker-strip {
+      background: #2e5c3e;
+      overflow: hidden; padding: 11px 0;
+    }
+    .ticker-track {
+      display: flex; animation: ticker 30s linear infinite;
+      white-space: nowrap;
+    }
+    .ticker-item {
+      display: inline-flex; align-items: center; gap: 16px;
+      padding: 0 20px;
+      font-family: var(--font-body);
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: #f4f9f4;
+    }
+    .ticker-sep { opacity: 0.3; font-size: 1rem; }
+    @keyframes ticker { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+
+    /* ════════════════════════════════════════
+       SECTION COMMON
+    ════════════════════════════════════════ */
+    .section { padding: 100px 0; }
+    .section-dark {
+      background: var(--espresso);
+    }
+    .section-mid { background: var(--cream-2); }
+    .section-warm { background: var(--cream-3); }
+
+    .s-eyebrow {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 14px;
+    }
+    .s-eyebrow::before { content: ''; display: block; width: 24px; height: 1.5px; background: #2e5c3e; }
+    .s-eyebrow.dark { color: var(--brown); }
+    .s-eyebrow.dark::before { background: var(--brown); }
+
+    .s-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      font-weight: 400; letter-spacing: -0.02em;
+      line-height: 1.1; margin-bottom: 16px;
+    }
+    .s-title.light { color: var(--cream); }
+    .s-title.dark { color: var(--espresso); }
+    .s-sub { font-size: 0.95rem; line-height: 1.8; max-width: 500px; }
+    .s-sub.light { color: rgba(250,246,239,0.55); }
+    .s-sub.dark { color: var(--brown); }
+
+    /* ════════════════════════════════════════
+       ABOUT
+    ════════════════════════════════════════ */
+    #about { background: var(--cream); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
+    .about-body p { font-size: 0.95rem; color: var(--brown); line-height: 1.9; margin-bottom: 18px; }
+    .about-body p:last-child { margin-bottom: 0; }
+    .about-pullquote {
+      margin-top: 32px; padding: 24px 28px;
+      background: var(--gold-ll);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 14px 14px 0;
+    }
+    .about-pullquote p {
+      font-family: var(--font-display);
+      font-style: italic; font-size: 1.15rem;
+      color: var(--espresso) !important; line-height: 1.5 !important;
+      margin: 0 !important;
+    }
+    .about-cards { display: flex; flex-direction: column; gap: 14px; }
+    .about-card {
+      display: flex; gap: 18px; align-items: flex-start;
+      padding: 24px 26px;
+      background: var(--cream-2);
+      border: 1px solid var(--cream-3);
+      border-radius: 18px;
+      transition: box-shadow 0.25s, transform 0.25s, border-color 0.25s;
+    }
+    .about-card:hover { box-shadow: 0 8px 32px var(--shadow-warm); transform: translateY(-2px); border-color: var(--sand); }
+    .ac-icon {
+      width: 44px; height: 44px; border-radius: 12px;
+      background: var(--gold-ll); border: 1px solid rgba(201,146,42,0.2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; flex-shrink: 0;
+    }
+    .ac-body h3 { font-size: 0.92rem; font-weight: 600; color: var(--espresso); margin-bottom: 5px; }
+    .ac-body p { font-size: 0.82rem; color: var(--brown); line-height: 1.7; }
+
+    /* ════════════════════════════════════════
+       EXPERIENCE
+    ════════════════════════════════════════ */
+    #experience { background: var(--cream-2); }
+    .exp-layout { display: grid; grid-template-columns: 280px 1fr; gap: 64px; }
+    .exp-sidebar { position: sticky; top: 90px; align-self: start; }
+    .exp-item {
+      background: var(--cream);
+      border: 1px solid var(--cream-3);
+      border-radius: 20px; padding: 32px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 12px var(--shadow-warm);
+      transition: box-shadow 0.25s, transform 0.25s;
+    }
+    .exp-item:hover { box-shadow: 0 8px 32px var(--shadow-warm); transform: translateY(-2px); }
+    .exp-item:last-child { margin-bottom: 0; }
+    .exp-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 4px; }
+    .exp-company { font-family: var(--font-display); font-size: 1.35rem; font-weight: 500; color: var(--espresso); }
+    .exp-period {
+      padding: 4px 12px; border-radius: 100px;
+      background: var(--gold-ll); border: 1px solid rgba(201,146,42,0.2);
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--gold); white-space: nowrap;
+    }
+    .exp-period.past { background: var(--cream-2); border-color: var(--cream-3); color: var(--taupe); }
+    .exp-role { font-size: 0.8rem; color: var(--taupe); font-weight: 500; margin-bottom: 20px; letter-spacing: 0.04em; }
+    .exp-bullets { display: flex; flex-direction: column; gap: 10px; }
+    .exp-bullet { display: flex; gap: 12px; font-size: 0.87rem; color: var(--brown); line-height: 1.7; }
+    .exp-bullet::before { content: ''; flex-shrink: 0; width: 5px; height: 5px; border-radius: 50%; background: #2e5c3e; margin-top: 7px; }
+    .exp-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 18px; }
+    .exp-tag { padding: 4px 11px; border-radius: 100px; background: var(--cream-2); border: 1px solid var(--cream-3); font-size: 0.7rem; font-weight: 500; color: var(--brown); }
+
+    /* ════════════════════════════════════════
+       CASE STUDIES
+    ════════════════════════════════════════ */
+    #case-studies { background: var(--espresso); }
+    .cases-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 52px; }
+    .case-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px; overflow: hidden; cursor: pointer;
+      transition: background 0.25s, border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+    }
+    .case-card:hover { background: rgba(255,255,255,0.07); border-color: rgba(201,146,42,0.3); transform: translateY(-4px); box-shadow: 0 20px 48px rgba(0,0,0,0.3); }
+    .case-top { padding: 24px 24px 0; display: flex; align-items: flex-start; justify-content: space-between; }
+    .case-num { font-family: var(--font-display); font-size: 3rem; font-weight: 300; color: rgba(255,255,255,0.06); line-height: 1; letter-spacing: -0.03em; }
+    .case-badge { padding: 4px 12px; border-radius: 100px; font-size: 0.67rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+    .case-badge.gold { background: rgba(201,146,42,0.15); border: 1px solid rgba(201,146,42,0.3); color: var(--gold); }
+    .case-badge.rust { background: rgba(184,76,46,0.15); border: 1px solid rgba(184,76,46,0.3); color: #e07a5a; }
+    .case-body { padding: 16px 24px 24px; }
+    .case-client { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 6px; }
+    .case-title { font-family: var(--font-display); font-size: 1.2rem; font-weight: 400; color: var(--cream); line-height: 1.3; margin-bottom: 10px; }
+    .case-desc { font-size: 0.82rem; color: rgba(250,246,239,0.5); line-height: 1.75; margin-bottom: 18px; }
+    .case-results { display: flex; flex-direction: column; gap: 7px; }
+    .case-result { display: flex; align-items: center; gap: 8px; font-size: 0.78rem; color: rgba(250,246,239,0.75); font-weight: 500; }
+    .cr-dot { width: 4px; height: 4px; border-radius: 50%; background: #2e5c3e; flex-shrink: 0; }
+    .case-footer { padding: 14px 24px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: space-between; }
+    .case-footer-tools { font-size: 0.68rem; color: rgba(255,255,255,0.25); font-weight: 500; }
+    .case-cta { font-size: 0.74rem; font-weight: 600; color: var(--gold); display: flex; align-items: center; gap: 5px; transition: gap 0.2s; }
+    .case-card:hover .case-cta { gap: 9px; }
+
+    /* ════════════════════════════════════════
+       MODAL
+    ════════════════════════════════════════ */
+    .modal-overlay { display: none; position: fixed; inset: 0; z-index: 200; background: rgba(18,16,14,0.75); backdrop-filter: blur(8px); align-items: center; justify-content: center; padding: 24px; }
+    .modal-overlay.open { display: flex; }
+    .modal { background: var(--cream); border: 1px solid var(--cream-3); border-radius: 20px; max-width: 700px; width: 100%; max-height: 85vh; overflow-y: auto; box-shadow: 0 40px 80px rgba(18,16,14,0.5); animation: modalIn 0.3s ease; }
+    @keyframes modalIn { from{opacity:0;transform:scale(0.96) translateY(14px)} to{opacity:1;transform:none} }
+    .modal-accent { height: 3px; background: linear-gradient(90deg, var(--gold) 0%, var(--rust) 100%); border-radius: 20px 20px 0 0; }
+    .modal-header { padding: 28px 32px 22px; border-bottom: 1px solid var(--cream-3); position: sticky; top: 0; background: var(--cream); z-index: 1; }
+    .modal-close { position: absolute; top: 20px; right: 20px; width: 32px; height: 32px; border-radius: 100px; background: var(--cream-2); border: 1px solid var(--cream-3); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; color: var(--brown); transition: background 0.2s; }
+    .modal-close:hover { background: var(--cream-3); }
+    .modal-body { padding: 28px 32px; }
+    .modal-section { margin-bottom: 24px; }
+    .modal-section h4 { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid var(--cream-3); }
+    .modal-section p, .modal-section li { font-size: 0.87rem; color: var(--brown); line-height: 1.8; }
+    .modal-section ul { display: flex; flex-direction: column; gap: 7px; }
+    .modal-section li { display: flex; gap: 10px; align-items: flex-start; }
+    .modal-section li::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: #2e5c3e; flex-shrink: 0; margin-top: 8px; }
+    .modal-chips { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .modal-chip { background: var(--cream-2); border: 1px solid var(--cream-3); border-radius: 10px; padding: 10px 14px; font-size: 0.78rem; color: var(--ink-3); display: flex; align-items: flex-start; gap: 8px; }
+    .mci { color: var(--forest); flex-shrink: 0; }
+
+    /* ════════════════════════════════════════
+       AUTOMATION
+    ════════════════════════════════════════ */
+    #automation { background: var(--cream-2); }
+    .auto-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 52px; }
+    .auto-card { background: var(--cream); border: 1px solid var(--cream-3); border-radius: 20px; padding: 30px; box-shadow: 0 2px 12px var(--shadow-warm); transition: box-shadow 0.25s, transform 0.25s; }
+    .auto-card:hover { box-shadow: 0 10px 36px var(--shadow-warm); transform: translateY(-3px); }
+    .live-tag { display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 100px; background: var(--forest-l); border: 1px solid rgba(46,92,62,0.2); font-size: 0.66rem; font-weight: 700; color: var(--forest); margin-bottom: 16px; letter-spacing: 0.08em; }
+    .live-tag-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--forest); animation: pulse-g 2s infinite; }
+    .auto-card h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 500; color: var(--espresso); margin-bottom: 10px; }
+    .auto-card p { font-size: 0.85rem; color: var(--brown); line-height: 1.8; margin-bottom: 18px; }
+    .auto-tools { display: flex; flex-wrap: wrap; gap: 6px; }
+    .auto-tool { padding: 4px 11px; border-radius: 100px; background: var(--gold-ll); border: 1px solid rgba(201,146,42,0.2); font-size: 0.7rem; font-weight: 600; color: var(--gold); }
+    .auto-meta { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--cream-3); }
+    .amd-row { display: flex; justify-content: space-between; font-size: 0.77rem; padding: 5px 0; }
+    .amd-row span:first-child { color: var(--taupe); }
+    .amd-row span:last-child { color: var(--espresso); font-weight: 500; }
+    .learning-banner {
+      margin-top: 14px; padding: 32px 36px;
+      background: var(--espresso); border-radius: 20px;
+      display: flex; align-items: center; justify-content: space-between; gap: 32px;
+      box-shadow: 0 12px 40px var(--shadow-deep);
+    }
+    .lb-text h3 { font-family: var(--font-display); font-size: 1.3rem; font-weight: 400; color: var(--cream); margin-bottom: 6px; }
+    .lb-text p { font-size: 0.83rem; color: rgba(250,246,239,0.5); }
+    .lb-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .lb-pill { padding: 5px 14px; border-radius: 100px; border: 1px solid rgba(255,255,255,0.12); font-size: 0.72rem; font-weight: 500; color: rgba(250,246,239,0.55); }
+    .lb-pill.active { border-color: rgba(201,146,42,0.4); color: var(--gold); background: rgba(201,146,42,0.08); }
+
+    /* ════════════════════════════════════════
+       SKILLS
+    ════════════════════════════════════════ */
+    #skills { background: var(--cream); }
+    .skills-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-top: 52px; }
+    .skill-group { background: var(--cream-2); border: 1px solid var(--cream-3); border-radius: 18px; padding: 24px; transition: box-shadow 0.2s; }
+    .skill-group:hover { box-shadow: 0 6px 24px var(--shadow-warm); }
+    .sg-top { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid var(--cream-3); }
+    .sg-accent { width: 8px; height: 8px; border-radius: 50%; }
+    .sg-accent.gold { background: #2e5c3e; }
+    .sg-accent.rust { background: var(--rust); }
+    .sg-accent.brown { background: var(--brown); }
+    .sg-accent.forest { background: var(--forest); }
+    .sg-accent.taupe { background: var(--taupe); }
+    .sg-accent.charcoal { background: var(--espresso); }
+    .sg-name { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brown); }
+    .sg-list { display: flex; flex-direction: column; gap: 8px; }
+    .sg-item { font-size: 0.82rem; color: var(--brown); display: flex; align-items: center; gap: 8px; }
+    .sg-item::before { content: ''; width: 3px; height: 3px; border-radius: 50%; background: var(--sand); flex-shrink: 0; }
+    .tools-band { margin-top: 12px; background: var(--cream-2); border: 1px solid var(--cream-3); border-radius: 18px; padding: 24px 28px; }
+    .tools-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brown); margin-bottom: 14px; }
+    .tools-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .t-pill { padding: 6px 15px; border-radius: 100px; background: var(--cream); border: 1px solid var(--cream-3); font-size: 0.78rem; font-weight: 500; color: var(--brown); transition: background 0.15s, border-color 0.15s; }
+    .t-pill:hover { background: var(--gold-ll); border-color: rgba(201,146,42,0.25); color: var(--espresso); }
+
+    /* ════════════════════════════════════════
+       CERTIFICATIONS
+    ════════════════════════════════════════ */
+    #certifications { background: var(--cream-2); }
+    .certs-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-top: 52px; }
+    .cert-card { background: var(--cream); border: 1px solid var(--cream-3); border-radius: 16px; padding: 20px 22px; display: flex; flex-direction: column; gap: 8px; transition: box-shadow 0.2s, transform 0.2s; }
+    .cert-card:hover { box-shadow: 0 6px 24px var(--shadow-warm); transform: translateY(-2px); }
+    .cert-top { display: flex; justify-content: space-between; align-items: center; }
+    .cert-issuer { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--taupe); }
+    .cert-status { display: flex; align-items: center; gap: 5px; font-size: 0.65rem; font-weight: 700; color: var(--forest); }
+    .cert-status-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--forest); }
+    .cert-name { font-size: 0.88rem; font-weight: 600; color: var(--espresso); line-height: 1.35; }
+    .cert-cat { display: inline-block; padding: 3px 9px; border-radius: 100px; background: var(--cream-2); border: 1px solid var(--cream-3); font-size: 0.65rem; font-weight: 500; color: var(--brown); }
+    .cert-card.wip { border-color: rgba(201,146,42,0.25); background: var(--gold-ll); }
+    .cert-card.wip .cert-status { color: var(--gold); }
+    .cert-card.wip .cert-status-dot { background: #2e5c3e; animation: pulse-g 2s infinite; }
+
+    /* ════════════════════════════════════════
+       CONTACT
+    ════════════════════════════════════════ */
+    #contact { background: var(--cream); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; }
+    .c-links { display: flex; flex-direction: column; gap: 10px; margin-top: 32px; }
+    .c-link { display: flex; align-items: center; gap: 14px; padding: 16px 20px; background: var(--cream-2); border: 1px solid var(--cream-3); border-radius: 16px; transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s; }
+    .c-link:hover { box-shadow: 0 6px 24px var(--shadow-warm); transform: translateY(-2px); border-color: var(--sand); }
+    .c-icon { width: 38px; height: 38px; border-radius: 10px; background: var(--gold-ll); border: 1px solid rgba(201,146,42,0.15); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+    .c-lbl { font-size: 0.63rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--taupe); }
+    .c-val { font-size: 0.85rem; font-weight: 500; color: var(--espresso); margin-top: 1px; }
+    .c-arr { margin-left: auto; color: var(--sand); font-size: 0.9rem; transition: color 0.2s; }
+    .c-link:hover .c-arr { color: var(--gold); }
+
+    .open-panel { background: var(--espresso); border-radius: 22px; padding: 36px; box-shadow: 0 16px 56px var(--shadow-deep); position: relative; overflow: hidden; }
+    .open-panel::before { content: ''; position: absolute; top: -100px; right: -100px; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle, rgba(201,146,42,0.10) 0%, transparent 70%); pointer-events: none; }
+    .op-title { font-family: var(--font-display); font-size: 1.6rem; font-weight: 400; color: var(--cream); margin-bottom: 10px; position: relative; z-index: 1; }
+    .op-desc { font-size: 0.87rem; color: rgba(250,246,239,0.55); line-height: 1.8; margin-bottom: 24px; position: relative; z-index: 1; }
+    .op-roles { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; position: relative; z-index: 1; }
+    .op-role { padding: 7px 18px; border-radius: 100px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); color: var(--cream); font-size: 0.78rem; font-weight: 500; }
+    .op-avail { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; position: relative; z-index: 1; }
+    .op-chip { display: flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 100px; border: 1px solid rgba(255,255,255,0.1); font-size: 0.72rem; font-weight: 500; color: rgba(250,246,239,0.55); }
+    .op-chip-dot { width: 5px; height: 5px; border-radius: 50%; background: #5eff8a; }
+    .op-sig { font-family: var(--font-display); font-style: italic; font-size: 1.05rem; color: var(--gold); line-height: 1.5; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.08); position: relative; z-index: 1; }
+    .edu-blk { margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.08); position: relative; z-index: 1; }
+    .edu-lbl { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(250,246,239,0.3); margin-bottom: 6px; }
+    .edu-txt { font-size: 0.84rem; color: rgba(250,246,239,0.6); line-height: 1.5; }
+
+    /* ════════════════════════════════════════
+       FOOTER
+    ════════════════════════════════════════ */
+    footer { background: var(--charcoal); padding: 40px 28px; }
+    .footer-inner { max-width: var(--max-w); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+    .footer-logo { font-family: var(--font-display); font-size: 1.2rem; font-weight: 400; color: rgba(250,246,239,0.6); }
+    .footer-logo em { font-style: italic; color: var(--gold); }
+    .footer-copy { font-size: 0.72rem; color: rgba(250,246,239,0.25); letter-spacing: 0.06em; }
+
+    /* ════════════════════════════════════════
+       FADE-UP
+    ════════════════════════════════════════ */
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-up.visible { opacity: 1; transform: none; }
+
+    /* ════════════════════════════════════════
+       RESPONSIVE
+    ════════════════════════════════════════ */
+    @media(max-width:960px){
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      #hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 60px 32px; }
+      .hero-right { min-height: 420px; }
+      .hero-bg-number { display: none; }
+      .hero-stats { flex-wrap: wrap; gap: 20px; }
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .exp-layout { grid-template-columns: 1fr; }
+      .exp-sidebar { position: static; }
+      .cases-grid { grid-template-columns: 1fr; }
+      .auto-grid { grid-template-columns: 1fr; }
+      .learning-banner { flex-direction: column; gap: 20px; }
+      .skills-grid { grid-template-columns: 1fr 1fr; }
+      .certs-grid { grid-template-columns: 1fr 1fr; }
+      .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+      .modal-chips { grid-template-columns: 1fr; }
+      .modal-body { padding: 20px 22px; }
+    }
+    @media(max-width:560px){
+      .skills-grid { grid-template-columns: 1fr; }
+      .certs-grid { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; }
+      .hero-stats { gap: 16px; }
+      .hs-item { flex: 0 0 45%; border-right: none; margin-right: 0; padding-right: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══ NAV ════════════════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="nav-logo">Priyanka <em>Lowanshi</em></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#case-studies">Projects</a></li>
+      <li><a href="#automation">Automation</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact" class="nav-cta">Connect</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#about" onclick="closeMobileNav()">About</a>
+    <a href="#experience" onclick="closeMobileNav()">Experience</a>
+    <a href="#case-studies" onclick="closeMobileNav()">Projects</a>
+    <a href="#automation" onclick="closeMobileNav()">Automation</a>
+    <a href="#skills" onclick="closeMobileNav()">Skills</a>
+    <a href="#certifications" onclick="closeMobileNav()">Certifications</a>
+    <a href="#contact" onclick="closeMobileNav()">Connect</a>
+  </div>
+</nav>
+
+<!-- ═══ HERO ════════════════════════════════════════════════════ -->
+<section id="hero">
+  <!-- LEFT: deep espresso panel -->
+  <div class="hero-left">
+    <div class="hero-bg-number">PL</div>
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-line"></div>
+      <span>Project Coordinator &amp; PM</span>
+    </div>
+    <h1 class="hero-name">
+      Priyanka<br>
+      <strong>Lowanshi</strong><br>
+      <em>delivering what matters.</em>
+    </h1>
+    <p class="hero-title">4+ Years &nbsp;·&nbsp; 20+ Projects &nbsp;·&nbsp; 5 Countries</p>
+    <p class="hero-desc">
+      International project delivery across UAE, UK, China, and Singapore — for ADNEC, DWTC, DMG, PICO, and Koelnmesse. 100% on-time. Zero critical escalations. Now building AI automations with Make.com.
+    </p>
+    <div class="hero-badges">
+      <span class="hero-badge gold">Agile &amp; Scrum</span>
+      <span class="hero-badge gold">Full SDLC</span>
+      <span class="hero-badge">International PM</span>
+      <span class="hero-badge">Make.com</span>
+      <span class="hero-badge">Pune, India</span>
+    </div>
+    <div class="hero-actions">
+      <a href="#case-studies" class="btn-gold">View My Projects</a>
+      <a href="#contact" class="btn-outline-light">Get in Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hs-item">
+        <div class="hs-n">20+</div>
+        <div class="hs-l">Intl. Projects Delivered</div>
+      </div>
+      <div class="hs-item">
+        <div class="hs-n">100%</div>
+        <div class="hs-l">On-Time Delivery</div>
+      </div>
+      <div class="hs-item">
+        <div class="hs-n">4+</div>
+        <div class="hs-l">Years Experience</div>
+      </div>
+      <div class="hs-item">
+        <div class="hs-n">0</div>
+        <div class="hs-l">Critical Escalations</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: photo panel -->
+  <div class="hero-right">
+    <div class="hero-photo-wrap">
+      <img src="Professional_Photo.png" alt="Priyanka Lowanshi" />
+    </div>
+    <div class="hero-info-card">
+      <div class="hic-name">Priyanka Lowanshi</div>
+      <div class="hic-role">Project Coordinator &amp; PM &nbsp;·&nbsp; Pune, India</div>
+      <div class="hic-available">
+        <div class="hic-dot"></div>
+        Open to new opportunities
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TICKER ══════════════════════════════════════════════════ -->
+<div class="ticker-strip">
+  <div class="ticker-track">
+    <span class="ticker-item">100% On-Time Delivery <span class="ticker-sep" style="opacity:0.5">·</span></span>
+    <span class="ticker-item">UAE &nbsp;·&nbsp; UK &nbsp;·&nbsp; China &nbsp;·&nbsp; Singapore <span class="ticker-sep" style="opacity:0.5">·</span></span>
+    <span class="ticker-item">20+ International Projects <span class="ticker-sep" style="opacity:0.5">·</span></span>
+    <span class="ticker-item">Zero Critical Escalations <span class="ticker-sep" style="opacity:0.5">·</span></span>
+    <span class="ticker-item">ADNEC &nbsp;·&nbsp; DWTC &nbsp;·&nbsp; DMG &nbsp;·&nbsp; PICO &nbsp;·&nbsp; Koelnmesse <span class="ticker-sep" style="opacity:0.5">·</span></span>
+    <span class="ticker-item">195,000+ Attendees Served <span class="ticker-sep" style="opacity:0.5">·</span></span>
+    <span class="ticker-item">Agile &nbsp;·&nbsp; Scrum &nbsp;·&nbsp; RAID &nbsp;·&nbsp; SDLC <span class="ticker-sep" style="opacity:0.5">·</span></span>
+    <span class="ticker-item">AI Automation &nbsp;·&nbsp; Make.com <span class="ticker-sep" style="opacity:0.5">·</span></span>
+    <span class="ticker-item">100% On-Time Delivery <span class="ticker-sep" style="opacity:0.5">·</span></span>
+    <span class="ticker-item">UAE &nbsp;·&nbsp; UK &nbsp;·&nbsp; China &nbsp;·&nbsp; Singapore <span class="ticker-sep" style="opacity:0.5">·</span></span>
+    <span class="ticker-item">20+ International Projects <span class="ticker-sep" style="opacity:0.5">·</span></span>
+    <span class="ticker-item">Zero Critical Escalations <span class="ticker-sep" style="opacity:0.5">·</span></span>
+    <span class="ticker-item">ADNEC &nbsp;·&nbsp; DWTC &nbsp;·&nbsp; DMG &nbsp;·&nbsp; PICO &nbsp;·&nbsp; Koelnmesse <span class="ticker-sep" style="opacity:0.5">·</span></span>
+    <span class="ticker-item">195,000+ Attendees Served <span class="ticker-sep" style="opacity:0.5">·</span></span>
+    <span class="ticker-item">Agile &nbsp;·&nbsp; Scrum &nbsp;·&nbsp; RAID &nbsp;·&nbsp; SDLC <span class="ticker-sep" style="opacity:0.5">·</span></span>
+    <span class="ticker-item">AI Automation &nbsp;·&nbsp; Make.com <span class="ticker-sep" style="opacity:0.5">·</span></span>
+  </div>
+</div>
+
+<!-- ═══ ABOUT ════════════════════════════════════════════════════ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="fade-up">
+        <div class="s-eyebrow dark">About</div>
+        <h2 class="s-title dark">The calm in the storm.</h2>
+        <div class="about-body">
+          <p>I'm Priyanka — a Project Coordinator with 4+ years managing complex, multi-stakeholder projects across UAE, UK, Singapore, and China. I specialise in large-scale event technology — registration portals, access control, and exhibitor platforms — for global organisers including ADNEC, DMG, PICO, Koelnmesse.</p>
+          <p>I keep teams aligned, stakeholders informed, and timelines intact — even when everything around me is changing. My approach is proactive, structured, and calm under pressure.</p>
+          <p>Currently expanding into AI-powered automation with Make.com, Open to Project Manager and Product Manager roles where I can drive strategic delivery at scale.</p>
+          <div class="about-pullquote">
+            <p>"Proactive RAID management, structured change control, and real communication — not just reports — is how I keep 20+ international projects on track simultaneously."</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-cards fade-up">
+        <div class="about-card">
+          <div class="ac-icon">🌍</div>
+          <div class="ac-body">
+            <h3>International Delivery</h3>
+            <p>Managed multicultural teams across 5 countries — UAE, UK, China, Singapore, India — with zero delivery failures and 100% on-time track record.</p>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="ac-icon">⚡</div>
+          <div class="ac-body">
+            <h3>Live Event Technology</h3>
+            <p>Delivered registration portals, access control apps, and badging systems for events up to 195,000+ attendees with zero system failures on event day.</p>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="ac-icon">🤖</div>
+          <div class="ac-body">
+            <h3>AI &amp; Automation</h3>
+            <p>Building live no-code automations with Make.com — an automation-first mindset brought to everyday project management workflows.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ EXPERIENCE ═══════════════════════════════════════════════ -->
+<section id="experience" class="section section-mid">
+  <div class="container">
+    <div class="exp-layout">
+      <div class="exp-sidebar fade-up">
+        <div class="s-eyebrow dark">Experience</div>
+        <h2 class="s-title dark">Where I've worked.</h2>
+        <p class="s-sub dark" style="margin-top:12px">4+ years of international project delivery across event technology, EdTech, and SaaS.</p>
+      </div>
+      <div class="fade-up">
+        <div class="exp-item">
+          <div class="exp-top">
+            <div class="exp-company">Hindavi Technologies</div>
+            <div class="exp-period">Aug 2022 – Present</div>
+          </div>
+          <div class="exp-role">Project Coordinator &nbsp;·&nbsp; Pune, India</div>
+          <div class="exp-bullets">
+            <div class="exp-bullet">Orchestrated delivery of 30+ international projects for ADNEC, DMG, PICO, Koelnmesse &amp; DWTC with 100% on-time success rate.</div>
+            <div class="exp-bullet">Coordinated full SDLC lifecycle for 5–8 concurrent projects using Agile — from planning through closure.</div>
+            <div class="exp-bullet">Facilitated all Scrum ceremonies for teams of 8–15, improving sprint velocity by 20% over 12 months.</div>
+            <div class="exp-bullet">Maintained RAID logs across 20+ projects, proactively reducing escalations by 40%.</div>
+            <div class="exp-bullet">Streamlined workflows through process mapping — reducing delays by 30% and turnaround time by 15%.</div>
+            <div class="exp-bullet">Monitored KPIs, SLAs, and delivery metrics — improving project completion rates by 25%.</div>
+            <div class="exp-bullet">Led stakeholder communication across 10+ cross-functional teams spanning 5 countries.</div>
+            <div class="exp-bullet">Managed structured change control — reducing unplanned scope changes by 20%.</div>
+          </div>
+          <div class="exp-tags">
+            <span class="exp-tag">Agile / Scrum</span><span class="exp-tag">RAID Logs</span><span class="exp-tag">Jira</span>
+            <span class="exp-tag">Power BI</span><span class="exp-tag">MS Project</span><span class="exp-tag">Change Management</span>
+          </div>
+        </div>
+        <div class="exp-item">
+          <div class="exp-top">
+            <div class="exp-company">BYJU'S</div>
+            <div class="exp-period past">Jan 2022 – Jun 2022</div>
+          </div>
+          <div class="exp-role">Project Administrator &nbsp;·&nbsp; Pune, India</div>
+          <div class="exp-bullets">
+            <div class="exp-bullet">Supported SDLC coordination for a team of 20+ across 3 simultaneous projects — documentation, task tracking, and KPI monitoring.</div>
+            <div class="exp-bullet">Identified process inefficiencies, contributing to a 30% increase in process efficiency over 5 months.</div>
+            <div class="exp-bullet">Acted as liaison between 4 cross-functional teams and senior stakeholders — reducing communication delays by 2 business days.</div>
+            <div class="exp-bullet">Maintained RAID tracking and MIS reports for full leadership transparency.</div>
+          </div>
+          <div class="exp-tags">
+            <span class="exp-tag">SDLC Coordination</span><span class="exp-tag">KPI Monitoring</span>
+            <span class="exp-tag">MIS Reporting</span><span class="exp-tag">Stakeholder Management</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CASE STUDIES ═════════════════════════════════════════════ -->
+<section id="case-studies" class="section section-dark">
+  <div class="container">
+    <div class="fade-up">
+      <div class="s-eyebrow">Case Studies</div>
+      <h2 class="s-title light">Projects that define my work.</h2>
+      <p class="s-sub light">Four in-depth project breakdowns. Click any card to read the full story.</p>
+    </div>
+    <div class="cases-grid">
+      <div class="case-card fade-up" onclick="openModal('m1')">
+        <div class="case-top"><div class="case-num">01</div><div class="case-badge gold">Dubai, UAE</div></div>
+        <div class="case-body">
+          <div class="case-client">DMG Events / DWTC</div>
+          <h3 class="case-title">Gulfood 2025 — Exhibitor Lifecycle Management</h3>
+          <p class="case-desc">End-to-end exhibitor journey for the world's largest food &amp; beverage trade show — 2,000+ exhibitors from 100+ countries.</p>
+          <div class="case-results">
+            <div class="case-result"><div class="cr-dot"></div>100% on-time delivery</div>
+            <div class="case-result"><div class="cr-dot"></div>40% escalation reduction via RAID</div>
+            <div class="case-result"><div class="cr-dot"></div>Zero critical escalations live</div>
+          </div>
+        </div>
+        <div class="case-footer"><span class="case-footer-tools">Agile · RAID · Jira · Power BI</span><span class="case-cta">Read case study →</span></div>
+      </div>
+      <div class="case-card fade-up" onclick="openModal('m2')">
+        <div class="case-top"><div class="case-num">02</div><div class="case-badge gold">Abu Dhabi, UAE</div></div>
+        <div class="case-body">
+          <div class="case-client">ADNEC</div>
+          <h3 class="case-title">UMEX 2026 — Registration &amp; Onboarding Portal</h3>
+          <p class="case-desc">High-scale registration portal for 10,000+ attendees — 3 dev teams, 2 client organisations, zero critical bugs at launch.</p>
+          <div class="case-results">
+            <div class="case-result"><div class="cr-dot"></div>10,000+ attendees onboarded on time</div>
+            <div class="case-result"><div class="cr-dot"></div>Zero bugs at launch</div>
+            <div class="case-result"><div class="cr-dot"></div>Retained for 2026 engagement</div>
+          </div>
+        </div>
+        <div class="case-footer"><span class="case-footer-tools">Power BI · Jira · Confluence</span><span class="case-cta">Read case study →</span></div>
+      </div>
+      <div class="case-card fade-up" onclick="openModal('m3')">
+        <div class="case-top"><div class="case-num">03</div><div class="case-badge rust">Flagship · May 2026</div></div>
+        <div class="case-body">
+          <div class="case-client">ADNEC Group — National Scale</div>
+          <h3 class="case-title">Make It in the Emirates 2026 — Full Event Tech Suite</h3>
+          <p class="case-desc">Three platforms for 195,000+ attendees. Crisis resolved in 5 days. CEO satisfaction. Zero system failures on event day.</p>
+          <div class="case-results">
+            <div class="case-result"><div class="cr-dot"></div>195,000+ attendees — zero failures</div>
+            <div class="case-result"><div class="cr-dot"></div>Crisis resolved in 5 days</div>
+            <div class="case-result"><div class="cr-dot"></div>CEO of ADNEC satisfaction expressed directly</div>
+          </div>
+        </div>
+        <div class="case-footer"><span class="case-footer-tools">MS Project · Power BI · Smartsheet</span><span class="case-cta">Read case study →</span></div>
+      </div>
+      <div class="case-card fade-up" onclick="openModal('m4')">
+        <div class="case-top"><div class="case-num">04</div><div class="case-badge gold">China · Retained</div></div>
+        <div class="case-body">
+          <div class="case-client">PICO International</div>
+          <h3 class="case-title">LTE 2025 &amp; 2026 — Exhibitor Portal &amp; Chinese Localisation</h3>
+          <p class="case-desc">Full Simplified Chinese localisation — language barriers, cultural gaps, multiple revision cycles. Retained for year two with no re-pitch.</p>
+          <div class="case-results">
+            <div class="case-result"><div class="cr-dot"></div>Full Chinese localisation approved</div>
+            <div class="case-result"><div class="cr-dot"></div>100% on-time delivery</div>
+            <div class="case-result"><div class="cr-dot"></div>Retained for LTE 2026</div>
+          </div>
+        </div>
+        <div class="case-footer"><span class="case-footer-tools">Jira · Google Sheets · Confluence</span><span class="case-cta">Read case study →</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MODALS ════════════════════════════════════════════════════ -->
+<div class="modal-overlay" id="m1"><div class="modal"><div class="modal-accent"></div>
+  <div class="modal-header"><div class="s-eyebrow dark" style="margin-bottom:8px">Case Study 01 · Gulfood 2025</div><h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:400;color:var(--espresso)">Exhibitor Lifecycle Management System</h2><button class="modal-close" onclick="closeModal('m1')">✕</button></div>
+  <div class="modal-body">
+    <div class="modal-section"><h4>Overview</h4><p>Client: DMG Events / DWTC · Dubai, UAE · 2,000+ exhibitors from 100+ countries · Team 8–12 · Agile methodology.</p></div>
+    <div class="modal-section"><h4>The Challenge</h4><ul><li>Managing full lifecycle of 2,000+ exhibitors across 100+ countries</li><li>Coordinating multiple internal teams without a centralised structure</li><li>Fixed live event deadline — zero flexibility</li><li>Frequent mid-project change requests</li><li>Complex backend integrations across exhibitor data modules</li></ul></div>
+    <div class="modal-section"><h4>My Approach</h4><ul><li>Coordinated full SDLC — requirements through to live deployment</li><li>Facilitated all Scrum ceremonies — sprint velocity up 20%</li><li>Comprehensive RAID log — escalations cut 40%</li><li>All change requests impact-assessed before approval</li><li>Dependency conflicts resolved proactively via daily standups</li></ul></div>
+    <div class="modal-section"><h4>Results</h4><div class="modal-chips"><div class="modal-chip"><span class="mci">✓</span>100% on-time delivery</div><div class="modal-chip"><span class="mci">✓</span>Zero critical escalations</div><div class="modal-chip"><span class="mci">↓</span>40% escalation reduction</div><div class="modal-chip"><span class="mci">↑</span>20% sprint velocity gain</div><div class="modal-chip"><span class="mci">↓</span>30% bottleneck reduction</div><div class="modal-chip"><span class="mci">●</span>Full executive visibility</div></div></div>
+    <div class="modal-section"><h4>Tools</h4><div class="exp-tags"><span class="exp-tag">Jira</span><span class="exp-tag">Confluence</span><span class="exp-tag">MS Excel</span><span class="exp-tag">Google Sheets</span><span class="exp-tag">Smartsheet</span><span class="exp-tag">Power BI</span><span class="exp-tag">MS Project</span></div></div>
+  </div>
+</div></div>
+
+<div class="modal-overlay" id="m2"><div class="modal"><div class="modal-accent"></div>
+  <div class="modal-header"><div class="s-eyebrow dark" style="margin-bottom:8px">Case Study 02 · UMEX 2026</div><h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:400;color:var(--espresso)">Registration &amp; User Onboarding Portal</h2><button class="modal-close" onclick="closeModal('m2')">✕</button></div>
+  <div class="modal-body">
+    <div class="modal-section"><h4>Overview</h4><p>Client: ADNEC · UMEX 2026 · Abu Dhabi, UAE · 10,000+ attendees · Government &amp; Defence sector · 8–10 team members.</p></div>
+    <div class="modal-section"><h4>The Challenge</h4><ul><li>Portal for 10,000+ attendees within a strict deadline</li><li>Complex user roles — exhibitors, visitors, press, VIPs, government delegates</li><li>Security compliance for a government/defence audience</li><li>Multiple UAT rounds — feedback collated, all bugs tracked to closure</li><li>Managing vendor dependencies and cross-functional teams simultaneously</li></ul></div>
+    <div class="modal-section"><h4>My Approach</h4><ul><li>Requirements gathered with ADNEC stakeholders — user stories in Confluence</li><li>Three UAT rounds managed — zero open bugs at launch</li><li>Onboarding flows designed for every attendee category</li><li>Weekly Power BI dashboards delivered to ADNEC leadership</li></ul></div>
+    <div class="modal-section"><h4>Results</h4><div class="modal-chips"><div class="modal-chip"><span class="mci">✓</span>Delivered ahead of go-live</div><div class="modal-chip"><span class="mci">✓</span>10,000+ attendees onboarded</div><div class="modal-chip"><span class="mci">✓</span>Zero critical bugs at launch</div><div class="modal-chip"><span class="mci">✓</span>Retained for Make It in Emirates 2026</div></div></div>
+    <div class="modal-section"><h4>Tools</h4><div class="exp-tags"><span class="exp-tag">Jira</span><span class="exp-tag">Confluence</span><span class="exp-tag">Power BI</span><span class="exp-tag">MS Project</span><span class="exp-tag">Google Sheets</span></div></div>
+  </div>
+</div></div>
+
+<div class="modal-overlay" id="m3"><div class="modal"><div class="modal-accent"></div>
+  <div class="modal-header"><div class="s-eyebrow dark" style="margin-bottom:8px">Case Study 03 · Make It in the Emirates 2026</div><h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:400;color:var(--espresso)">Full Event Technology Suite — 195,000+ Attendees</h2><button class="modal-close" onclick="closeModal('m3')">✕</button></div>
+  <div class="modal-body">
+    <div class="modal-section"><h4>Overview</h4><p>Client: ADNEC Group · National-scale UAE government event · Three platforms: Registration, Access Control, Badging · 195,000+ attendees · May 2026.</p></div>
+    <div class="modal-section"><h4>The Challenge</h4><ul><li>Three interconnected platforms coordinated simultaneously</li><li>Critical third-party integration failure two weeks before go-live</li><li>Surge to 195,000+ attendees — far exceeding projections</li><li>C-suite and government-level scrutiny throughout</li></ul></div>
+    <div class="modal-section"><h4>The Crisis — How I Handled It</h4><ul><li>Emergency cross-functional meeting immediately convened</li><li>Full impact mapped — fallback integration pathway identified</li><li>Transparent daily crisis updates to ADNEC — calm, clear, no surprises</li><li>Crisis resolved in 5 days — zero impact on delivery date</li></ul></div>
+    <div class="modal-section"><h4>Results</h4><div class="modal-chips"><div class="modal-chip"><span class="mci">✓</span>195,000+ attendees — zero failures</div><div class="modal-chip"><span class="mci">✓</span>Crisis resolved in 5 days</div><div class="modal-chip"><span class="mci">✓</span>CEO satisfaction directly expressed</div><div class="modal-chip"><span class="mci">✓</span>Zero critical escalations throughout</div></div></div>
+    <div class="modal-section"><h4>Tools</h4><div class="exp-tags"><span class="exp-tag">MS Project</span><span class="exp-tag">Jira</span><span class="exp-tag">Confluence</span><span class="exp-tag">Power BI</span><span class="exp-tag">Smartsheet</span></div></div>
+  </div>
+</div></div>
+
+<div class="modal-overlay" id="m4"><div class="modal"><div class="modal-accent"></div>
+  <div class="modal-header"><div class="s-eyebrow dark" style="margin-bottom:8px">Case Study 04 · PICO / LTE China</div><h2 style="font-family:var(--font-display);font-size:1.4rem;font-weight:400;color:var(--espresso)">Exhibitor Portal &amp; Simplified Chinese Localisation</h2><button class="modal-close" onclick="closeModal('m4')">✕</button></div>
+  <div class="modal-body">
+    <div class="modal-section"><h4>Overview</h4><p>Client: PICO International · LTE 2025 &amp; 2026 · China · Exhibitor Portal + Exhibitor Listing + Full Simplified Chinese Localisation · 2024–2026 (ongoing).</p></div>
+    <div class="modal-section"><h4>The Challenge</h4><ul><li>Complete localisation into Simplified Chinese — UI, forms, emails, listings</li><li>Language barrier between Indian dev team and Chinese client</li><li>Cultural differences in communication, approvals, business etiquette</li><li>Multiple revision cycles for linguistic and cultural accuracy</li><li>Time zone differences adding coordination complexity</li></ul></div>
+    <div class="modal-section"><h4>My Approach</h4><ul><li>Structured communication protocol — requirements in both languages</li><li>Dedicated localisation tracker — every element mapped to translation, review, approval</li><li>Buffer time built into roadmap — all revision cycles within plan</li><li>Fixed weekly calls with bilingual written summaries</li></ul></div>
+    <div class="modal-section"><h4>Results</h4><div class="modal-chips"><div class="modal-chip"><span class="mci">✓</span>Full Chinese localisation approved</div><div class="modal-chip"><span class="mci">✓</span>100% on-time delivery</div><div class="modal-chip"><span class="mci">✓</span>PICO retained for LTE 2026</div><div class="modal-chip"><span class="mci">✓</span>Scope expanded for 2026</div></div></div>
+    <div class="modal-section"><h4>Tools</h4><div class="exp-tags"><span class="exp-tag">Jira</span><span class="exp-tag">MS Project</span><span class="exp-tag">Google Sheets</span><span class="exp-tag">Confluence</span></div></div>
+  </div>
+</div></div>
+
+<!-- ═══ AUTOMATION ════════════════════════════════════════════════ -->
+<section id="automation" class="section">
+  <div class="container">
+    <div class="fade-up">
+      <div class="s-eyebrow dark">AI &amp; Automation</div>
+      <h2 class="s-title dark">Building the future of PM workflows.</h2>
+      <p class="s-sub dark">Live no-code automations with Make.com — an automation-first mindset brought to project management.</p>
+    </div>
+    <div class="auto-grid">
+      <div class="auto-card fade-up">
+        <div class="live-tag"><div class="live-tag-dot"></div>Live &amp; Active</div>
+        <h3>Daily Morning Wellness Reminder</h3>
+        <p>Automated daily wellness reminder sending a personalised HTML email every morning at 8:00 AM IST — built with Make.com, zero coding, fully live and running daily.</p>
+        <div class="auto-tools"><span class="auto-tool">Make.com</span><span class="auto-tool">Gmail</span><span class="auto-tool">HTML Email</span><span class="auto-tool">Scheduler</span></div>
+        <div class="auto-meta">
+          <div class="amd-row"><span>Trigger</span><span>Daily at 8:00 AM IST</span></div>
+          <div class="amd-row"><span>Output</span><span>Personalised HTML email</span></div>
+          <div class="amd-row"><span>Impact</span><span>Zero manual effort</span></div>
+        </div>
+      </div>
+      <div class="auto-card fade-up">
+        <div class="live-tag"><div class="live-tag-dot"></div>Live &amp; Active</div>
+        <h3>Gmail to Google Sheets Request Tracker</h3>
+        <p>Watches Gmail and auto-logs every incoming request into Google Sheets in real time — capturing date, sender, subject, and status. Mirrors professional PM request workflows exactly.</p>
+        <div class="auto-tools"><span class="auto-tool">Make.com</span><span class="auto-tool">Gmail</span><span class="auto-tool">Google Sheets</span><span class="auto-tool">Data Mapping</span></div>
+        <div class="auto-meta">
+          <div class="amd-row"><span>Trigger</span><span>Every 15 mins — Gmail watch</span></div>
+          <div class="amd-row"><span>Output</span><span>Auto-logged row in Sheets</span></div>
+          <div class="amd-row"><span>Impact</span><span>Zero copy-paste — full audit trail</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="learning-banner fade-up">
+      <div class="lb-text">
+        <h3>Currently Learning</h3>
+        <p>Expanding automation skills towards advanced multi-step workflows and enterprise integrations.</p>
+        <div class="lb-pills">
+          <span class="lb-pill active">Make.com Advanced · In Progress</span>
+          <span class="lb-pill">n8n Automation · Upcoming</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SKILLS ════════════════════════════════════════════════════ -->
+<section id="skills" class="section section-mid">
+  <div class="container">
+    <div class="fade-up">
+      <div class="s-eyebrow dark">Skills &amp; Tools</div>
+      <h2 class="s-title dark">What I bring to every project.</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group fade-up"><div class="sg-top"><div class="sg-accent gold"></div><div class="sg-name">Project Management</div></div><div class="sg-list"><div class="sg-item">Agile &amp; Scrum Methodology</div><div class="sg-item">Full SDLC Coordination</div><div class="sg-item">Sprint Planning &amp; Ceremonies</div><div class="sg-item">PMO Reporting</div><div class="sg-item">Gantt Chart &amp; Roadmap Planning</div><div class="sg-item">UAT Coordination</div><div class="sg-item">Waterfall / Hybrid Delivery</div></div></div>
+      <div class="skill-group fade-up"><div class="sg-top"><div class="sg-accent rust"></div><div class="sg-name">Risk &amp; Operations</div></div><div class="sg-list"><div class="sg-item">RAID Log Management</div><div class="sg-item">Risk Mitigation &amp; Issue Resolution</div><div class="sg-item">Change Management</div><div class="sg-item">SLA Management</div><div class="sg-item">Vendor Management</div><div class="sg-item">Escalation Management</div><div class="sg-item">Resource Planning</div></div></div>
+      <div class="skill-group fade-up"><div class="sg-top"><div class="sg-accent brown"></div><div class="sg-name">Strategy &amp; Execution</div></div><div class="sg-list"><div class="sg-item">KPI &amp; Metrics Tracking</div><div class="sg-item">Budget Tracking</div><div class="sg-item">Process Improvement</div><div class="sg-item">Cross-Functional Leadership</div><div class="sg-item">Stakeholder Management</div><div class="sg-item">Client Relationship Management</div><div class="sg-item">MIS &amp; Dashboard Reporting</div></div></div>
+      <div class="skill-group fade-up"><div class="sg-top"><div class="sg-accent forest"></div><div class="sg-name">Event Technology</div></div><div class="sg-list"><div class="sg-item">Registration &amp; Onboarding Portals</div><div class="sg-item">Exhibitor Lifecycle Management</div><div class="sg-item">Access Control Systems</div><div class="sg-item">Vetting &amp; Badging Platforms</div><div class="sg-item">Backend Integration Coordination</div><div class="sg-item">Live Event Deployment</div></div></div>
+      <div class="skill-group fade-up"><div class="sg-top"><div class="sg-accent taupe"></div><div class="sg-name">AI &amp; Automation</div></div><div class="sg-list"><div class="sg-item">Make.com (Live Automations Built)</div><div class="sg-item">n8n (In Progress)</div><div class="sg-item">Prompt Engineering for PM</div><div class="sg-item">ChatGPT &amp; Microsoft Copilot</div><div class="sg-item">Generative AI Applications</div></div></div>
+      <div class="skill-group fade-up"><div class="sg-top"><div class="sg-accent charcoal"></div><div class="sg-name">Soft Skills</div></div><div class="sg-list"><div class="sg-item">Cross-Cultural Communication</div><div class="sg-item">Calm Under Pressure</div><div class="sg-item">Problem Solving</div><div class="sg-item">Team Coordination</div><div class="sg-item">Continuous Improvement</div><div class="sg-item">Multicultural Team Leadership</div></div></div>
+    </div>
+    <div class="tools-band fade-up">
+      <div class="tools-label">Tools &amp; Platforms</div>
+      <div class="tools-pills">
+        <span class="t-pill">Jira</span><span class="t-pill">Power BI</span><span class="t-pill">MS Project</span><span class="t-pill">Confluence</span><span class="t-pill">Smartsheet</span><span class="t-pill">MS Excel</span><span class="t-pill">Google Sheets</span><span class="t-pill">MS Office Suite</span><span class="t-pill">Make.com</span><span class="t-pill">Notion</span><span class="t-pill">ChatGPT</span><span class="t-pill">Microsoft Copilot</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CERTIFICATIONS ════════════════════════════════════════════ -->
+<section id="certifications" class="section">
+  <div class="container">
+    <div class="fade-up">
+      <div class="s-eyebrow dark">Certifications</div>
+      <h2 class="s-title dark">Committed to continuous learning.</h2>
+    </div>
+    <div class="certs-grid">
+      <div class="cert-card fade-up"><div class="cert-top"><div class="cert-issuer">Microsoft</div><div class="cert-status"><div class="cert-status-dot"></div>Done</div></div><div class="cert-name">Microsoft Power BI Data Analyst</div><span class="cert-cat">Data Analytics</span></div>
+      <div class="cert-card fade-up"><div class="cert-top"><div class="cert-issuer">Google / Coursera</div><div class="cert-status"><div class="cert-status-dot"></div>Done</div></div><div class="cert-name">Foundations of Project Management</div><span class="cert-cat">PM Fundamentals</span></div>
+      <div class="cert-card fade-up"><div class="cert-top"><div class="cert-issuer">Google / Coursera</div><div class="cert-status"><div class="cert-status-dot"></div>Done</div></div><div class="cert-name">Project Initiation: Starting a Successful Project</div><span class="cert-cat">PM Methodology</span></div>
+      <div class="cert-card fade-up"><div class="cert-top"><div class="cert-issuer">Google / Coursera</div><div class="cert-status"><div class="cert-status-dot"></div>Done</div></div><div class="cert-name">Project Execution: Running the Project</div><span class="cert-cat">PM Execution</span></div>
+      <div class="cert-card fade-up"><div class="cert-top"><div class="cert-issuer">Google / Coursera</div><div class="cert-status"><div class="cert-status-dot"></div>Done</div></div><div class="cert-name">Agile Project Management</div><span class="cert-cat">Agile &amp; Scrum</span></div>
+      <div class="cert-card fade-up"><div class="cert-top"><div class="cert-issuer">AI / Online</div><div class="cert-status"><div class="cert-status-dot"></div>Done</div></div><div class="cert-name">Prompt Engineering for Project Managers</div><span class="cert-cat">AI for PM</span></div>
+      <div class="cert-card fade-up"><div class="cert-top"><div class="cert-issuer">Google / Online</div><div class="cert-status"><div class="cert-status-dot"></div>Done</div></div><div class="cert-name">Introduction to Generative AI</div><span class="cert-cat">AI Literacy</span></div>
+      <div class="cert-card fade-up"><div class="cert-top"><div class="cert-issuer">Online</div><div class="cert-status"><div class="cert-status-dot"></div>Done</div></div><div class="cert-name">Practical Application of GenAI for Project Managers</div><span class="cert-cat">Applied AI for PM</span></div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ════════════════════════════════════════════════════ -->
+<section id="contact" class="section section-mid">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="fade-up">
+        <div class="s-eyebrow dark">Let's Connect</div>
+        <h2 class="s-title dark">Ready to work together?</h2>
+        <p class="s-sub dark">Looking for a calm-under-pressure PM with international experience and an automation-forward mindset? I'd love to connect.</p>
+        <div class="c-links">
+          <a href="mailto:prynca2604@gmail.com" class="c-link">
+            <div class="c-icon">📧</div>
+            <div><div class="c-lbl">Email</div><div class="c-val">prynca2604@gmail.com</div></div>
+            <div class="c-arr">→</div>
+          </a>
+          <a href="https://www.linkedin.com/in/priyanka-lowanshi-994bbb229/" target="_blank" rel="noopener" class="c-link">
+            <div class="c-icon">💼</div>
+            <div><div class="c-lbl">LinkedIn</div><div class="c-val">linkedin.com/in/priyanka-lowanshi</div></div>
+            <div class="c-arr">→</div>
+          </a>
+          <a href="https://scented-nutria-bf3.notion.site/Priyanka-Lowanshi-PM-Portfolio-35effcceea4b803fa4b4e499b2467330" target="_blank" rel="noopener" class="c-link">
+            <div class="c-icon">📁</div>
+            <div><div class="c-lbl">Notion Portfolio</div><div class="c-val">View Full Case Studies</div></div>
+            <div class="c-arr">→</div>
+          </a>
+          <div class="c-link">
+            <div class="c-icon">📍</div>
+            <div><div class="c-lbl">Location</div><div class="c-val">Pune, Maharashtra, India</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="open-panel fade-up">
+        <h3 class="op-title">Open to Opportunities</h3>
+        <p class="op-desc">Actively looking for my next role where I can bring international delivery experience, Agile expertise, and an automation-forward mindset to a high-impact team.</p>
+        <div class="op-roles">
+          <span class="op-role">Project Manager</span>
+          <span class="op-role">Project Coordinator</span>
+          <span class="op-role">Product Manager</span>
+        </div>
+        <div class="op-avail">
+          <div class="op-chip"><div class="op-chip-dot"></div>Remote</div>
+          <div class="op-chip"><div class="op-chip-dot"></div>Hybrid</div>
+          <div class="op-chip"><div class="op-chip-dot"></div>On-site</div>
+        </div>
+        <div class="edu-blk">
+          <div class="edu-lbl">Education</div>
+          <div class="edu-txt"><strong style="color:rgba(250,246,239,0.8)">Master of Public Administration</strong><br>Sarojini Naidu Autonomous College, Bhopal, India</div>
+        </div>
+        <div class="op-sig">"I don't just manage projects. I make sure they actually get done."</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Priyanka <em>Lowanshi</em></div>
+    <div class="footer-copy">© 2026 &nbsp;·&nbsp; priyankalowanshi.com &nbsp;·&nbsp; Pune, Maharashtra, India</div>
+  </div>
+</footer>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 40));
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => mobileNav.classList.toggle('open'));
+  function closeMobileNav() { mobileNav.classList.remove('open'); }
+  function openModal(id) { document.getElementById(id).classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeModal(id) { document.getElementById(id).classList.remove('open'); document.body.style.overflow = ''; }
+  document.querySelectorAll('.modal-overlay').forEach(o => o.addEventListener('click', e => { if(e.target===o) closeModal(o.id); }));
+  document.addEventListener('keydown', e => { if(e.key==='Escape') document.querySelectorAll('.modal-overlay.open').forEach(m => closeModal(m.id)); });
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); observer.unobserve(e.target); }});
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
